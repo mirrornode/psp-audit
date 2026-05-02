@@ -1,0 +1,273 @@
+{
+  "schema_version": 2,
+  "repo": "microsoft/vscode",
+  "status": "blocked",
+  "operator_message": "Stop merge-, release-, and deploy-capable agents immediately.",
+  "severity_score": 100,
+  "severity_label": "critical",
+  "summary": "Repository has 8 findings requiring blocked handling.",
+  "findings": [
+    {
+      "id": "R-002",
+      "rule": "unsafe_shell_event_payload",
+      "description": "Shell step in job 'main' interpolates github.event payload",
+      "severity": "High",
+      "file": ".github/workflows/no-engineering-system-changes.yml",
+      "line": 3,
+      "remediation": "Pass event data via env vars, never interpolate directly into shell."
+    },
+    {
+      "id": "R-002",
+      "rule": "unsafe_shell_event_payload",
+      "description": "Shell step in job 'main' interpolates github.event payload",
+      "severity": "High",
+      "file": ".github/workflows/no-engineering-system-changes.yml",
+      "line": 4,
+      "remediation": "Pass event data via env vars, never interpolate directly into shell."
+    },
+    {
+      "id": "R-002",
+      "rule": "unsafe_shell_event_payload",
+      "description": "Shell step in job 'main' interpolates github.event payload",
+      "severity": "High",
+      "file": ".github/workflows/no-engineering-system-changes.yml",
+      "line": 8,
+      "remediation": "Pass event data via env vars, never interpolate directly into shell."
+    },
+    {
+      "id": "R-004",
+      "rule": "missing_permissions_block",
+      "description": "No permissions block at workflow or job level",
+      "severity": "Medium",
+      "file": ".github/workflows/pr-darwin-test.yml",
+      "line": 1,
+      "remediation": "Add permissions: read-all at workflow level, override per job as needed."
+    },
+    {
+      "id": "R-004",
+      "rule": "missing_permissions_block",
+      "description": "No permissions block at workflow or job level",
+      "severity": "Medium",
+      "file": ".github/workflows/pr-linux-cli-test.yml",
+      "line": 1,
+      "remediation": "Add permissions: read-all at workflow level, override per job as needed."
+    },
+    {
+      "id": "R-004",
+      "rule": "missing_permissions_block",
+      "description": "No permissions block at workflow or job level",
+      "severity": "Medium",
+      "file": ".github/workflows/pr-linux-test.yml",
+      "line": 1,
+      "remediation": "Add permissions: read-all at workflow level, override per job as needed."
+    },
+    {
+      "id": "R-004",
+      "rule": "missing_permissions_block",
+      "description": "No permissions block at workflow or job level",
+      "severity": "Medium",
+      "file": ".github/workflows/pr-win32-test.yml",
+      "line": 1,
+      "remediation": "Add permissions: read-all at workflow level, override per job as needed."
+    },
+    {
+      "id": "R-002",
+      "rule": "unsafe_shell_event_payload",
+      "description": "Shell step in job 'screenshots' interpolates github.event payload",
+      "severity": "High",
+      "file": ".github/workflows/screenshot-test.yml",
+      "line": 16,
+      "remediation": "Pass event data via env vars, never interpolate directly into shell."
+    }
+  ],
+  "trust_drift": {
+    "changed": [
+      {
+        "sha": "8309b22",
+        "message": "agent host: eagerly create sessions when a folder is picked (#313841)",
+        "author": "Connor Peet"
+      },
+      {
+        "sha": "96e4e9e",
+        "message": "agentHost: auto-approve reads of Copilot SDK tool-output temp files (#313837)",
+        "author": "Rob Lourens"
+      },
+      {
+        "sha": "5abf846",
+        "message": "Model picker changes  (#313825)",
+        "author": "Paul"
+      },
+      {
+        "sha": "b2e6267",
+        "message": "chat: allow text selection in tool confirmation message (#313829)",
+        "author": "Rob Lourens"
+      },
+      {
+        "sha": "4a644b4",
+        "message": "Disable flaky test (#313832)",
+        "author": "Paul"
+      },
+      {
+        "sha": "4ca77f1",
+        "message": "sessions: hide \"Enter to Apply\" tooltip in workspace picker (#313826)",
+        "author": "Rob Lourens"
+      },
+      {
+        "sha": "4bc1682",
+        "message": "sessions: remember tunnel disconnects (#313800)",
+        "author": "Rob Lourens"
+      },
+      {
+        "sha": "317392e",
+        "message": "agent-host: restore sessions without listing catalog (#313821)",
+        "author": "Rob Lourens"
+      },
+      {
+        "sha": "f6c05d7",
+        "message": "agentHost: forward parent --user-data-dir to spawned host (#313827)",
+        "author": "Rob Lourens"
+      },
+      {
+        "sha": "9b92388",
+        "message": "UseChatSessionCustomizationsForCustomAgents setting (#313781)",
+        "author": "Martin Aeschlimann"
+      },
+      {
+        "sha": "675ef9f",
+        "message": "[cli] reduce info logs (#313822)",
+        "author": "Peng Lyu"
+      },
+      {
+        "sha": "e6b9ae7",
+        "message": "AHP/Customizations: BrowserPluginGitCommandService for adding plugins in web (#313575)",
+        "author": "Josh Spicer"
+      },
+      {
+        "sha": "8d9a4bb",
+        "message": "Add support for UBB in manage models view (#313741)",
+        "author": "Paul"
+      },
+      {
+        "sha": "682c790",
+        "message": "Don't dismiss hover when mouse exits due to programmatic resize (#313584)",
+        "author": "Paul"
+      },
+      {
+        "sha": "7f53a83",
+        "message": "Merge pull request #307763 from AshtonYoon/fix/markdown-preview-scroll-sync-regressions",
+        "author": "Matt Bierner"
+      },
+      {
+        "sha": "ff66ce6",
+        "message": "Merge branch 'main' into fix/markdown-preview-scroll-sync-regressions",
+        "author": "Matt Bierner"
+      },
+      {
+        "sha": "1d94ae1",
+        "message": "gate claude model behind setting too (#313801)",
+        "author": "Justin Chen"
+      },
+      {
+        "sha": "d3e91ab",
+        "message": "Move agent host picker to sessions sidebar (web desktop) (#313619)",
+        "author": "Osvaldo Ortega"
+      },
+      {
+        "sha": "7211c0f",
+        "message": "agentHost/claude: Phase 3 reference grounding + Phase 4 ClaudeAgent skeleton (#313780)",
+        "author": "Tyler James Leonhardt"
+      },
+      {
+        "sha": "7bf921d",
+        "message": "Yemohyle/add to ext telemetrey (#313159)",
+        "author": "yemohyleyemohyle"
+      }
+    ],
+    "summary": "20 trust-relevant changes detected."
+  },
+  "recoverability": {
+    "items": [
+      {
+        "id": "R-004",
+        "rule": "missing_permissions_block",
+        "description": "No permissions block at workflow or job level",
+        "severity": "Medium",
+        "file": ".github/workflows/pr-darwin-test.yml",
+        "line": 1,
+        "remediation": "Add permissions: read-all at workflow level, override per job as needed."
+      },
+      {
+        "id": "R-004",
+        "rule": "missing_permissions_block",
+        "description": "No permissions block at workflow or job level",
+        "severity": "Medium",
+        "file": ".github/workflows/pr-linux-cli-test.yml",
+        "line": 1,
+        "remediation": "Add permissions: read-all at workflow level, override per job as needed."
+      },
+      {
+        "id": "R-004",
+        "rule": "missing_permissions_block",
+        "description": "No permissions block at workflow or job level",
+        "severity": "Medium",
+        "file": ".github/workflows/pr-linux-test.yml",
+        "line": 1,
+        "remediation": "Add permissions: read-all at workflow level, override per job as needed."
+      },
+      {
+        "id": "R-004",
+        "rule": "missing_permissions_block",
+        "description": "No permissions block at workflow or job level",
+        "severity": "Medium",
+        "file": ".github/workflows/pr-win32-test.yml",
+        "line": 1,
+        "remediation": "Add permissions: read-all at workflow level, override per job as needed."
+      }
+    ],
+    "summary": "4 recoverable items identified."
+  },
+  "agent_policy": {
+    "coding_agent": {
+      "allowed_operations": [
+        "read"
+      ],
+      "blocked_operations": [
+        "merge",
+        "push",
+        "workflow_dispatch"
+      ]
+    },
+    "deploy_agent": {
+      "allowed_operations": [
+        "read"
+      ],
+      "blocked_operations": [
+        "deploy",
+        "release",
+        "workflow_dispatch"
+      ]
+    },
+    "release_bot": {
+      "allowed_operations": [
+        "read"
+      ],
+      "blocked_operations": [
+        "tag",
+        "release",
+        "publish"
+      ]
+    },
+    "comment_bot": {
+      "allowed_operations": [
+        "read",
+        "issue_comment"
+      ],
+      "blocked_operations": []
+    }
+  },
+  "next_steps": [
+    "Add permissions: read-all to all workflows.",
+    "Move github.event.* references into env vars before shell use."
+  ],
+  "generated_at": "2026-05-02T07:32:58.729807+00:00"
+}

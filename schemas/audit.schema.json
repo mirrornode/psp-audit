@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://mirrornode.github.io/psp/schemas/audit.schema.json",
+  "title": "PSP Raw Audit Input",
+  "type": "object",
+  "properties": {
+    "owner": { "type": "string" },
+    "repo": { "type": "string" },
+    "Risky": { "type": "array", "items": { "type": "object" } },
+    "Changed": { "type": "array" },
+    "Recoverable": { "type": "array" },
+    "NextSteps": { "type": "array", "items": { "type": "string" } }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://mirrornode.github.io/psp/schemas/verdict-card.schema.json",
+  "title": "PSP Verdict Card",
+  "type": "object",
+  "required": ["repo", "status", "operator_message", "top_issue", "risk_count", "next_move"],
+  "properties": {
+    "repo": { "type": "string" },
+    "status": { "type": "string" },
+    "operator_message": { "type": "string" },
+    "top_issue": { "type": "string" },
+    "risk_count": { "type": "integer" },
+    "next_move": { "type": "string" }
+  }
+}

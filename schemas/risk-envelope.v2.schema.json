@@ -1,0 +1,50 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://mirrornode.github.io/psp/schemas/risk-envelope.v2.schema.json",
+  "title": "PSP Risk Envelope v2",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "repo",
+    "status",
+    "operator_message",
+    "severity_score",
+    "severity_label",
+    "summary",
+    "findings",
+    "trust_drift",
+    "recoverability",
+    "agent_policy",
+    "next_steps",
+    "generated_at"
+  ],
+  "properties": {
+    "schema_version": { "type": "integer", "const": 2 },
+    "repo": { "type": "string" },
+    "status": { "type": "string", "enum": ["safe", "review", "blocked"] },
+    "operator_message": { "type": "string" },
+    "severity_score": { "type": "integer", "minimum": 0, "maximum": 100 },
+    "severity_label": { "type": "string", "enum": ["none", "low", "medium", "high", "critical"] },
+    "summary": { "type": "string" },
+    "findings": { "type": "array", "items": { "type": "object" } },
+    "trust_drift": {
+      "type": "object",
+      "required": ["changed", "summary"],
+      "properties": {
+        "changed": { "type": "array" },
+        "summary": { "type": "string" }
+      }
+    },
+    "recoverability": {
+      "type": "object",
+      "required": ["items", "summary"],
+      "properties": {
+        "items": { "type": "array" },
+        "summary": { "type": "string" }
+      }
+    },
+    "agent_policy": { "type": "object" },
+    "next_steps": { "type": "array", "items": { "type": "string" } },
+    "generated_at": { "type": "string" }
+  }
+}

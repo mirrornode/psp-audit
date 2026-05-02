@@ -1,0 +1,5 @@
+Repo: microsoft/vscode
+Status: blocked
+Operator: Stop merge-, release-, and deploy-capable agents immediately.
+Severity: 100 (critical)
+Findings: 8

@@ -1,0 +1,7 @@
+{
+  "repo": "microsoft/vscode",
+  "status": "blocked",
+  "operator_message": "Stop merge-, release-, and deploy-capable agents immediately.",
+  "severity_score": 100,
+  "severity_label": "critical"
+}

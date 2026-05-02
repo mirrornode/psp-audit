@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://mirrornode.github.io/psp/schemas/incident-report.schema.json",
+  "title": "PSP Incident Report",
+  "type": "object",
+  "required": ["repo", "status", "operator_message", "report_markdown"],
+  "properties": {
+    "repo": { "type": "string" },
+    "status": { "type": "string" },
+    "operator_message": { "type": "string" },
+    "report_markdown": { "type": "string" }
+  }
+}
