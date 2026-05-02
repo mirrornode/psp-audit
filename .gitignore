@@ -1,2 +1,4 @@
 .venv/
 audit.json
+__pycache__/
+*.py[cod]
