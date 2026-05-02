@@ -1,0 +1,237 @@
+{
+  "schema_version": 2,
+  "owner": "torvalds",
+  "repo": "linux",
+  "audited_at": "2026-05-02T07:14:32Z",
+  "refs": [
+    "master"
+  ],
+  "tags": [
+    "v7.1-rc1",
+    "v7.0",
+    "v7.0-rc7",
+    "v7.0-rc6",
+    "v7.0-rc5",
+    "v7.0-rc4",
+    "v7.0-rc3",
+    "v7.0-rc2",
+    "v7.0-rc1",
+    "v6.19",
+    "v6.19-rc8",
+    "v6.19-rc7",
+    "v6.19-rc6",
+    "v6.19-rc5",
+    "v6.19-rc4",
+    "v6.19-rc3",
+    "v6.19-rc2",
+    "v6.19-rc1",
+    "v6.18",
+    "v6.18-rc7",
+    "v6.18-rc6",
+    "v6.18-rc5",
+    "v6.18-rc4",
+    "v6.18-rc3",
+    "v6.18-rc2",
+    "v6.18-rc1",
+    "v6.17",
+    "v6.17-rc7",
+    "v6.17-rc6",
+    "v6.17-rc5",
+    "v6.17-rc4",
+    "v6.17-rc3",
+    "v6.17-rc2",
+    "v6.17-rc1",
+    "v6.16",
+    "v6.16-rc7",
+    "v6.16-rc6",
+    "v6.16-rc5",
+    "v6.16-rc4",
+    "v6.16-rc3",
+    "v6.16-rc2",
+    "v6.16-rc1",
+    "v6.15",
+    "v6.15-rc7",
+    "v6.15-rc6",
+    "v6.15-rc5",
+    "v6.15-rc4",
+    "v6.15-rc3",
+    "v6.15-rc2",
+    "v6.15-rc1",
+    "v6.14",
+    "v6.14-rc7",
+    "v6.14-rc6",
+    "v6.14-rc5",
+    "v6.14-rc4",
+    "v6.14-rc3",
+    "v6.14-rc2",
+    "v6.14-rc1",
+    "v6.13",
+    "v6.13-rc7",
+    "v6.13-rc6",
+    "v6.13-rc5",
+    "v6.13-rc4",
+    "v6.13-rc3",
+    "v6.13-rc2",
+    "v6.13-rc1",
+    "v6.12",
+    "v6.12-rc7",
+    "v6.12-rc6",
+    "v6.12-rc5",
+    "v6.12-rc4",
+    "v6.12-rc3",
+    "v6.12-rc2",
+    "v6.12-rc1",
+    "v6.11",
+    "v6.11-rc7",
+    "v6.11-rc6",
+    "v6.11-rc5",
+    "v6.11-rc4",
+    "v6.11-rc3",
+    "v6.11-rc2",
+    "v6.11-rc1",
+    "v6.10",
+    "v6.10-rc7",
+    "v6.10-rc6",
+    "v6.10-rc5",
+    "v6.10-rc4",
+    "v6.10-rc3",
+    "v6.10-rc2",
+    "v6.10-rc1",
+    "v6.9",
+    "v6.9-rc7",
+    "v6.9-rc6",
+    "v6.9-rc5",
+    "v6.9-rc4",
+    "v6.9-rc3",
+    "v6.9-rc2",
+    "v6.9-rc1",
+    "v6.8",
+    "v6.8-rc7"
+  ],
+  "workflows": [],
+  "settings_snapshot": {},
+  "findings": [],
+  "Risky": [],
+  "Changed": [
+    {
+      "sha": "f1a5e78",
+      "message": "Merge tag 'drm-fixes-2026-05-02' of https://gitlab.freedesktop.org/drm/kernel",
+      "author": "Linus Torvalds"
+    },
+    {
+      "sha": "cd546f7",
+      "message": "Merge tag 'arm64-fixes' of git://git.kernel.org/pub/scm/linux/kernel/git/arm64/linux",
+      "author": "Linus Torvalds"
+    },
+    {
+      "sha": "ef5f46b",
+      "message": "Merge tag 'selinux-pr-20260501' of git://git.kernel.org/pub/scm/linux/kernel/git/pcmoore/selinux",
+      "author": "Linus Torvalds"
+    },
+    {
+      "sha": "ee9dce4",
+      "message": "futex: Drop CLONE_THREAD requirement for private default hash alloc",
+      "author": "Davidlohr Bueso"
+    },
+    {
+      "sha": "bb1d73f",
+      "message": "Merge tag 's390-7.1-2' of git://git.kernel.org/pub/scm/linux/kernel/git/s390/linux",
+      "author": "Linus Torvalds"
+    },
+    {
+      "sha": "227c3d5",
+      "message": "Merge tag 'v7.1-rc2-ksmbd-server-fixes' of git://git.samba.org/ksmbd",
+      "author": "Linus Torvalds"
+    },
+    {
+      "sha": "6fe0be6",
+      "message": "Merge tag 'block-7.1-20260430' of git://git.kernel.org/pub/scm/linux/kernel/git/axboe/linux",
+      "author": "Linus Torvalds"
+    },
+    {
+      "sha": "9d88bb9",
+      "message": "Merge tag 'io_uring-7.1-20260430' of git://git.kernel.org/pub/scm/linux/kernel/git/axboe/linux",
+      "author": "Linus Torvalds"
+    },
+    {
+      "sha": "33d0c9c",
+      "message": "Merge tag 'spi-fix-v7.1-rc1' of git://git.kernel.org/pub/scm/linux/kernel/git/broonie/spi",
+      "author": "Linus Torvalds"
+    },
+    {
+      "sha": "030e8a4",
+      "message": "arm64: signal: Preserve POR_EL0 if poe_context is missing",
+      "author": "Kevin Brodsky"
+    },
+    {
+      "sha": "d8b0e2e",
+      "message": "Merge tag 'regulator-fix-v7.1-rc1' of git://git.kernel.org/pub/scm/linux/kernel/git/broonie/regulator",
+      "author": "Linus Torvalds"
+    },
+    {
+      "sha": "a973736",
+      "message": "Merge tag 'regmap-v7.1-rc1' of git://git.kernel.org/pub/scm/linux/kernel/git/broonie/regmap",
+      "author": "Linus Torvalds"
+    },
+    {
+      "sha": "2b4d021",
+      "message": "Merge tag 'mm-hotfixes-stable-2026-04-30-15-39' of git://git.kernel.org/pub/scm/linux/kernel/git/akpm/mm",
+      "author": "Linus Torvalds"
+    },
+    {
+      "sha": "4d8e74a",
+      "message": "arm64: Reserve an extra page for early kernel mapping",
+      "author": "Zhaoyang Huang"
+    },
+    {
+      "sha": "bb7235e",
+      "message": "kselftest/arm64: Include <asm/ptrace.h> for user_gcs definition",
+      "author": "Leo Yan"
+    },
+    {
+      "sha": "f0997a0",
+      "message": "Merge tag 'drm-xe-fixes-2026-04-30' of https://gitlab.freedesktop.org/drm/xe/kernel into drm-fixes",
+      "author": "Dave Airlie"
+    },
+    {
+      "sha": "b006ef5",
+      "message": "Merge tag 'amd-drm-fixes-7.1-2026-04-30' of https://gitlab.freedesktop.org/agd5f/linux into drm-fixes",
+      "author": "Dave Airlie"
+    },
+    {
+      "sha": "8c0f9cd",
+      "message": "spi: cadence: Probe and unbind fixes",
+      "author": "Mark Brown"
+    },
+    {
+      "sha": "4f12ee0",
+      "message": "spi: cadence-quadspi: Probe and unbind fixes",
+      "author": "Mark Brown"
+    },
+    {
+      "sha": "26fd6bf",
+      "message": "Merge tag 'mtd/fixes-for-7.1-rc2' of git://git.kernel.org/pub/scm/linux/kernel/git/mtd/linux",
+      "author": "Linus Torvalds"
+    }
+  ],
+  "Recoverable": [],
+  "NextSteps": [],
+  "operator_message": "torvalds/linux is safe for agent execution.",
+  "trust_drift": {
+    "snapshot_date": null,
+    "new_findings": [],
+    "resolved_findings": [],
+    "drift_direction": "no_baseline"
+  },
+  "agent_policy": {
+    "verdict": "safe",
+    "blocking_rule_ids": [],
+    "review_rule_ids": [],
+    "executor_class": "any"
+  },
+  "recoverability": {
+    "steps": [],
+    "estimated_files": 0,
+    "blocking_count": 0
+  }
+}
