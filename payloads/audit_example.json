@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "owner": "Acme",
+  "repo": "stellar",
+  "refs": [
+    "abcdef123456"
+  ],
+  "tags": [
+    "v1.0.0"
+  ],
+  "workflows": [
+    ".github/workflows/ci.yml"
+  ],
+  "settings_snapshot": false,
+  "Risky": [
+    {
+      "id": "R-001",
+      "description": "pull_request_target used in workflow",
+      "severity": "High",
+      "file": ".github/workflows/ci.yml",
+      "line": 12,
+      "remediation": "Reduce token scope and prefer safer triggers."
+    }
+  ],
+  "Changed": [
+    {
+      "timestamp": "2026-05-01T12:00:00Z",
+      "action": "workflow_modified",
+      "actor": "system"
+    }
+  ],
+  "Recoverable": [
+    {
+      "type": "branch",
+      "name": "main",
+      "status": "restorable",
+      "link": "GitHub restore path"
+    }
+  ],
+  "NextSteps": [
+    "Rotate tokens",
+    "Lock sensitive branches",
+    "Validate actions permissions"
+  ]
+}\n

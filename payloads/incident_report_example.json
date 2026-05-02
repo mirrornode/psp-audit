@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "Changed": [
+    {
+      "timestamp": "2026-04-28T10:15:00Z",
+      "action": "PR opened by user",
+      "actor": "user"
+    }
+  ],
+  "Risky": [
+    {
+      "id": "R-001",
+      "description": "pull_request_target usage",
+      "severity": "High"
+    }
+  ],
+  "Recoverable": [
+    {
+      "type": "workflow",
+      "name": "ci.yml",
+      "status": "recoverable"
+    }
+  ],
+  "NextSteps": [
+    "Rotate tokens",
+    "Restore workflow",
+    "Lock branches"
+  ]
+}\n
