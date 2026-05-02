@@ -1,0 +1,1463 @@
+{
+  "schema_version": 2,
+  "owner": "vercel",
+  "repo": "next.js",
+  "audited_at": "2026-05-02T07:15:44Z",
+  "refs": [
+    "01-02-Copy_58398",
+    "01-02-Rename___next_f_to___rsc_payload",
+    "01-02-Try_removing_partial_manifest",
+    "01-03--_implemented_api_invocation_logic_for_feedback_thumb_up_down_-_added_component_test_to_erroroverlaylayout_and_fixed_bug_in_clip-rule_etc",
+    "01-05-Rename_acceptance_directory_to_acceptance-pages",
+    "01-05-Start_typechecking_at_the_same_time_between_pages_and_app_router",
+    "01-07-remove_createclientrouterfilter_from_setup-dev-bundler",
+    "01-07-split_ready_in_log_from_next.config.js_loading",
+    "01-09-fix_console.trace_including_unexpected_lines",
+    "01-10-Support_any_value_in_RECORD_REPLAY",
+    "01-10-optimize-cell-data-serialization",
+    "01-14-serve_fallback_shell_when_root_params_are_unknown",
+    "01-16-Update_ReactRefreshRegression_test_snapshot_for_Turbopack",
+    "01-17-test_lucide-react_import",
+    "01-19-Move_next/react-dev-overlay_into_next",
+    "01-19-Remove_module_scope_variable_in_hot-dev-client",
+    "01-20-create-next-app_enable_typed_routes_by_default",
+    "01-23-tweak_prefetch_cache_key_prefix_logic",
+    "01-24-Turbopack_test_updates",
+    "01-30-Add_test_for_issue_45393",
+    "01-30-Use_full_snapshot_for_redboxsource",
+    "01-31-add_handling_to_skip_prefetch_payloads_if_partial",
+    "02-01-works_for_turbopack",
+    "02-01-works_for_webpack",
+    "02-03-fix_dev_overlay_source_map_for_turbopack",
+    "02-04-fix_memory_leak_in_createprefetchresponsestream_by_releasing_reader_lock",
+    "02-07-Check_ecosystem_packages_for_Turbopack",
+    "02-08-Remove_check_from_module-imports_test",
+    "02-11-prevent_dev_overlay_infinite_error_loop",
+    "02-11-wip_react_optimization",
+    "02-12-add_failing_test_for_turbopack_experimental_react",
+    "02-13-Add_project.entrypoints_",
+    "02-13-ensure_test_files_are_populated_in_next_deploy",
+    "02-17-Add_additional_tests_for_streaming_responses",
+    "02-17-Use_undici_for_fetch_in_test_suite",
+    "02-19-_dev-overlay_disable_old_overlay_tests_from_ppr_runners",
+    "02-19-fix_extra_error",
+    "02-20-test_ci",
+    "02-21-_dev-overlay_bundle_for_release",
+    "02-21-Expire_loading_state_cache_separately_from_cache_node_data",
+    "02-21-Trigger_error_when_encountering_duplicate_root_layouts",
+    "02-21-wip_dev-overlay_remove_original_sources_after_bundle",
+    "02-22-Add_failing_test_for_navigating_from_pages_to_app_with_dynamic_route_in_pages",
+    "02-24-refactor_update_module.compiled.js_for_node_stream_support",
+    "02-24-test_add_cache_dce_guard_test",
+    "02-25-remove_action_forwarding_logic",
+    "02-26-explore_codegen",
+    "02-27-Use_consistent_/_not-found_entrypoint_for_dev_and_build",
+    "03-03-Fix_Sanity_studio_in_cms-sanity",
+    "03-04-Change_default_TypeScript_config_to_strict_true",
+    "03-04-introduce_withnavigatefn_on_next_link",
+    "03-07-empty_project_path",
+    "03-09-use_for.in_in_createcomponenttree",
+    "03-10-Only_run_upload_for_daily_areweturboyet_collection",
+    "03-11-Remove_minimal_env_var_from_define-env-plugin",
+    "03-13-chore_enable_plugin_typescript-eslint_recommended-type-checked_eslint_shared_config",
+    "03-13-development_add_experimental_flag_to_run_generatestaticparams_without_worker",
+    "03-13-otel_split_trace_and_tracewithoptions",
+    "03-13-refactor_test_drop_global_as_any_test_modes",
+    "03-13-refactor_test_use_imported_test_mode_instead_of_global_in_tests",
+    "03-13-route_handlers_fix_incorrect_devrequesttiminginternalsend",
+    "03-19-Update_turbopack-build-tests-manifest.json",
+    "03-20-Disable_on-demand-entries-handler_for_app",
+    "03-26-Fix_MDX_test",
+    "03-26-Update_Turbopack_docs",
+    "03-28-better_impl_of_render_indicator",
+    "03-30-fault_injection_tests",
+    "04-01-fix_ppr_cache_miss_when_navigating_to_page_with_searchparams",
+    "04-02-failing_test_for_prefetchinlining_revalidation",
+    "04-03-turbopack_build_apply_process.env.turbopack_transform_to_production",
+    "04-04-chore_tests_fix_tests_after_cleanup",
+    "04-06-_tests_re-enable_disabled_action_deployment_tests",
+    "04-06-streaming_reads",
+    "04-08-deprecate_edge_runtime",
+    "04-08-node.js_streams_apply_comments_from_92252",
+    "04-10-_segment_cache_ensure_activity_doesn_t_restore_stale_segments_after_revalidation",
+    "04-10-add_additional_handling_to_prevent_double_redirects_in_streaming_context",
+    "04-13-_ts-next-plugin_apply_lru_cache_for_virtual_env_files",
+    "04-13-_ts-next-plugin_perf_reuse_existing_virtual_env",
+    "04-14-Add_TypeScript_port_of_app_structure",
+    "04-15-_otel_add_spans_for_various_cache_components_warmup_phases",
+    "04-15-convert_test_integration_to_isolated_tests",
+    "04-16-_ts-next-plugin_add_generatemetadata_completion",
+    "04-16-demo_85d111c0_add_activity_feed_api",
+    "04-16-turbopack_build_add_failing_test_for_src_folder_with_root_middleware",
+    "04-19-Update_React",
+    "04-20-Reduce_serial_tasks_in_taskfile.js",
+    "04-23-implement_chainStreams",
+    "04-24-Use_ESM_bundles_for_client-side_Next.js_core_code",
+    "04-25-_turbopack-trace-server_propagate_rcstr_through_queries_drop_spannames_cache",
+    "04-27-_ci_ensure_latest_tag_is_not_stale",
+    "04-28-add_memory_samples_to_the_mcp_tool_results",
+    "04-28-add_metadata_about_the_persist_size",
+    "04-28-turbopack_add_failing_test_for_78592",
+    "05-02-Change_create-next-app_defaults",
+    "05-07-Add_failing_test_for_middleware_rewriting_to_external_url",
+    "05-10-Implement_createBufferedTransformStream",
+    "05-10-Implement_insertion_stream_utilities_for_Node.js_Streams",
+    "05-18-fix_redundant_fetching_of_inactive_default_segments",
+    "05-22-segment_cache_cache_misses_should_not_be_cached"
+  ],
+  "tags": [
+    "@vercel/devlow-bench@0.3.4",
+    "@vercel/devlow-bench@0.3.3",
+    "v16.3.0-canary.8",
+    "v16.3.0-canary.7",
+    "v16.3.0-canary.6",
+    "v16.3.0-canary.5",
+    "v16.3.0-canary.4",
+    "v16.3.0-canary.3",
+    "v16.3.0-canary.2",
+    "v16.3.0-canary.1",
+    "v16.3.0-canary.0",
+    "v16.2.4",
+    "v16.2.3",
+    "v16.2.2",
+    "v16.2.1",
+    "v16.2.1-canary.46",
+    "v16.2.1-canary.45",
+    "v16.2.1-canary.44",
+    "v16.2.1-canary.43",
+    "v16.2.1-canary.42",
+    "v16.2.1-canary.41",
+    "v16.2.1-canary.40",
+    "v16.2.1-canary.39",
+    "v16.2.1-canary.38",
+    "v16.2.1-canary.37",
+    "v16.2.1-canary.36",
+    "v16.2.1-canary.35",
+    "v16.2.1-canary.34",
+    "v16.2.1-canary.33",
+    "v16.2.1-canary.32",
+    "v16.2.1-canary.31",
+    "v16.2.1-canary.30",
+    "v16.2.1-canary.29",
+    "v16.2.1-canary.28",
+    "v16.2.1-canary.27",
+    "v16.2.1-canary.26",
+    "v16.2.1-canary.25",
+    "v16.2.1-canary.24",
+    "v16.2.1-canary.23",
+    "v16.2.1-canary.22",
+    "v16.2.1-canary.21",
+    "v16.2.1-canary.20",
+    "v16.2.1-canary.19",
+    "v16.2.1-canary.18",
+    "v16.2.1-canary.17",
+    "v16.2.1-canary.16",
+    "v16.2.1-canary.15",
+    "v16.2.1-canary.14",
+    "v16.2.1-canary.13",
+    "v16.2.1-canary.12",
+    "v16.2.1-canary.11",
+    "v16.2.1-canary.10",
+    "v16.2.1-canary.9",
+    "v16.2.1-canary.8",
+    "v16.2.1-canary.7",
+    "v16.2.1-canary.6",
+    "v16.2.1-canary.5",
+    "v16.2.1-canary.4",
+    "v16.2.1-canary.3",
+    "v16.2.1-canary.2",
+    "v16.2.1-canary.1",
+    "v16.2.1-canary.0",
+    "v16.2.0",
+    "v16.2.0-canary.104",
+    "v16.2.0-canary.103",
+    "v16.2.0-canary.102",
+    "v16.2.0-canary.101",
+    "v16.2.0-canary.100",
+    "v16.2.0-canary.99",
+    "v16.2.0-canary.98",
+    "v16.2.0-canary.97",
+    "v16.2.0-canary.96",
+    "v16.2.0-canary.95",
+    "v16.2.0-canary.94",
+    "v16.2.0-canary.93",
+    "v16.2.0-canary.92",
+    "v16.2.0-canary.91",
+    "v16.2.0-canary.90",
+    "v16.2.0-canary.89",
+    "v16.2.0-canary.88",
+    "v16.2.0-canary.87",
+    "v16.2.0-canary.86",
+    "v16.2.0-canary.85",
+    "v16.2.0-canary.84",
+    "v16.2.0-canary.83",
+    "v16.2.0-canary.82",
+    "v16.2.0-canary.81",
+    "v16.2.0-canary.80",
+    "v16.2.0-canary.79",
+    "v16.2.0-canary.78",
+    "v16.2.0-canary.77",
+    "v16.2.0-canary.76",
+    "v16.2.0-canary.75",
+    "v16.2.0-canary.74",
+    "v16.2.0-canary.73",
+    "v16.2.0-canary.72",
+    "v16.2.0-canary.71",
+    "v16.2.0-canary.70",
+    "v16.2.0-canary.69",
+    "v16.2.0-canary.68"
+  ],
+  "workflows": [
+    {
+      "name": "build_and_deploy.yml",
+      "path": ".github/workflows/build_and_deploy.yml",
+      "findings": 3
+    },
+    {
+      "name": "build_and_test.yml",
+      "path": ".github/workflows/build_and_test.yml",
+      "findings": 1
+    },
+    {
+      "name": "build_reusable.yml",
+      "path": ".github/workflows/build_reusable.yml",
+      "findings": 1
+    },
+    {
+      "name": "code_freeze.yml",
+      "path": ".github/workflows/code_freeze.yml",
+      "findings": 1
+    },
+    {
+      "name": "create_release_branch.yml",
+      "path": ".github/workflows/create_release_branch.yml",
+      "findings": 1
+    },
+    {
+      "name": "graphite_ci_optimizer.yml",
+      "path": ".github/workflows/graphite_ci_optimizer.yml",
+      "findings": 1
+    },
+    {
+      "name": "integration_tests_reusable.yml",
+      "path": ".github/workflows/integration_tests_reusable.yml",
+      "findings": 1
+    },
+    {
+      "name": "issue_lock.yml",
+      "path": ".github/workflows/issue_lock.yml",
+      "findings": 0
+    },
+    {
+      "name": "issue_stale.yml",
+      "path": ".github/workflows/issue_stale.yml",
+      "findings": 1
+    },
+    {
+      "name": "issue_wrong_template.yml",
+      "path": ".github/workflows/issue_wrong_template.yml",
+      "findings": 1
+    },
+    {
+      "name": "popular.yml",
+      "path": ".github/workflows/popular.yml",
+      "findings": 1
+    },
+    {
+      "name": "pr_ci_comment.yml",
+      "path": ".github/workflows/pr_ci_comment.yml",
+      "findings": 0
+    },
+    {
+      "name": "pull_request_auto_label.yml",
+      "path": ".github/workflows/pull_request_auto_label.yml",
+      "findings": 2
+    },
+    {
+      "name": "pull_request_stats.yml",
+      "path": ".github/workflows/pull_request_stats.yml",
+      "findings": 1
+    },
+    {
+      "name": "release-next-rspack.yml",
+      "path": ".github/workflows/release-next-rspack.yml",
+      "findings": 1
+    },
+    {
+      "name": "retry_deploy_test.yml",
+      "path": ".github/workflows/retry_deploy_test.yml",
+      "findings": 1
+    },
+    {
+      "name": "retry_test.yml",
+      "path": ".github/workflows/retry_test.yml",
+      "findings": 1
+    },
+    {
+      "name": "rspack-nextjs-build-integration-tests.yml",
+      "path": ".github/workflows/rspack-nextjs-build-integration-tests.yml",
+      "findings": 1
+    },
+    {
+      "name": "rspack-nextjs-dev-integration-tests.yml",
+      "path": ".github/workflows/rspack-nextjs-dev-integration-tests.yml",
+      "findings": 1
+    },
+    {
+      "name": "rspack-update-tests-manifest.yml",
+      "path": ".github/workflows/rspack-update-tests-manifest.yml",
+      "findings": 1
+    },
+    {
+      "name": "setup-nextjs-build.yml",
+      "path": ".github/workflows/setup-nextjs-build.yml",
+      "findings": 1
+    },
+    {
+      "name": "sync_backport_canary_release.yml",
+      "path": ".github/workflows/sync_backport_canary_release.yml",
+      "findings": 1
+    },
+    {
+      "name": "test-turbopack-rust-bench-test.yml",
+      "path": ".github/workflows/test-turbopack-rust-bench-test.yml",
+      "findings": 1
+    },
+    {
+      "name": "test_e2e_deploy_release.yml",
+      "path": ".github/workflows/test_e2e_deploy_release.yml",
+      "findings": 1
+    },
+    {
+      "name": "test_e2e_project_reset_cron.yml",
+      "path": ".github/workflows/test_e2e_project_reset_cron.yml",
+      "findings": 1
+    },
+    {
+      "name": "test_examples.yml",
+      "path": ".github/workflows/test_examples.yml",
+      "findings": 1
+    },
+    {
+      "name": "triage.yml",
+      "path": ".github/workflows/triage.yml",
+      "findings": 0
+    },
+    {
+      "name": "trigger_release.yml",
+      "path": ".github/workflows/trigger_release.yml",
+      "findings": 1
+    },
+    {
+      "name": "turbopack-benchmark.yml",
+      "path": ".github/workflows/turbopack-benchmark.yml",
+      "findings": 0
+    },
+    {
+      "name": "turbopack-nextjs-build-integration-tests.yml",
+      "path": ".github/workflows/turbopack-nextjs-build-integration-tests.yml",
+      "findings": 1
+    },
+    {
+      "name": "turbopack-nextjs-dev-integration-tests.yml",
+      "path": ".github/workflows/turbopack-nextjs-dev-integration-tests.yml",
+      "findings": 1
+    },
+    {
+      "name": "turbopack-update-tests-manifest.yml",
+      "path": ".github/workflows/turbopack-update-tests-manifest.yml",
+      "findings": 1
+    },
+    {
+      "name": "update_fonts_data.yml",
+      "path": ".github/workflows/update_fonts_data.yml",
+      "findings": 1
+    },
+    {
+      "name": "update_react.yml",
+      "path": ".github/workflows/update_react.yml",
+      "findings": 1
+    },
+    {
+      "name": "update_react_poller.yml",
+      "path": ".github/workflows/update_react_poller.yml",
+      "findings": 0
+    },
+    {
+      "name": "upload-tests-manifest.yml",
+      "path": ".github/workflows/upload-tests-manifest.yml",
+      "findings": 1
+    },
+    {
+      "name": "upload_preview_tarballs.yml",
+      "path": ".github/workflows/upload_preview_tarballs.yml",
+      "findings": 1
+    }
+  ],
+  "settings_snapshot": {},
+  "findings": [
+    {
+      "id": "R-004",
+      "rule": "missing_permissions_block",
+      "description": "No permissions block at workflow or job level",
+      "severity": "Medium",
+      "file": ".github/workflows/build_and_deploy.yml",
+      "line": 1,
+      "remediation": "Add permissions: read-all at workflow level, override per job as needed."
+    },
+    {
+      "id": "R-002",
+      "rule": "unsafe_shell_event_payload",
+      "description": "Shell step in job 'deploy-target' interpolates github.event payload",
+      "severity": "High",
+      "file": ".github/workflows/build_and_deploy.yml",
+      "line": 2,
+      "remediation": "Pass event data via env vars, never interpolate directly into shell."
+    },
+    {
+      "id": "R-002",
+      "rule": "unsafe_shell_event_payload",
+      "description": "Shell step in job 'deploy-tarball' interpolates github.event payload",
+      "severity": "High",
+      "file": ".github/workflows/build_and_deploy.yml",
+      "line": 7,
+      "remediation": "Pass event data via env vars, never interpolate directly into shell."
+    },
+    {
+      "id": "R-004",
+      "rule": "missing_permissions_block",
+      "description": "No permissions block at workflow or job level",
+      "severity": "Medium",
+      "file": ".github/workflows/build_and_test.yml",
+      "line": 1,
+      "remediation": "Add permissions: read-all at workflow level, override per job as needed."
+    },
+    {
+      "id": "R-004",
+      "rule": "missing_permissions_block",
+      "description": "No permissions block at workflow or job level",
+      "severity": "Medium",
+      "file": ".github/workflows/build_reusable.yml",
+      "line": 1,
+      "remediation": "Add permissions: read-all at workflow level, override per job as needed."
+    },
+    {
+      "id": "R-004",
+      "rule": "missing_permissions_block",
+      "description": "No permissions block at workflow or job level",
+      "severity": "Medium",
+      "file": ".github/workflows/code_freeze.yml",
+      "line": 1,
+      "remediation": "Add permissions: read-all at workflow level, override per job as needed."
+    },
+    {
+      "id": "R-004",
+      "rule": "missing_permissions_block",
+      "description": "No permissions block at workflow or job level",
+      "severity": "Medium",
+      "file": ".github/workflows/create_release_branch.yml",
+      "line": 1,
+      "remediation": "Add permissions: read-all at workflow level, override per job as needed."
+    },
+    {
+      "id": "R-004",
+      "rule": "missing_permissions_block",
+      "description": "No permissions block at workflow or job level",
+      "severity": "Medium",
+      "file": ".github/workflows/graphite_ci_optimizer.yml",
+      "line": 1,
+      "remediation": "Add permissions: read-all at workflow level, override per job as needed."
+    },
+    {
+      "id": "R-004",
+      "rule": "missing_permissions_block",
+      "description": "No permissions block at workflow or job level",
+      "severity": "Medium",
+      "file": ".github/workflows/integration_tests_reusable.yml",
+      "line": 1,
+      "remediation": "Add permissions: read-all at workflow level, override per job as needed."
+    },
+    {
+      "id": "R-004",
+      "rule": "missing_permissions_block",
+      "description": "No permissions block at workflow or job level",
+      "severity": "Medium",
+      "file": ".github/workflows/issue_stale.yml",
+      "line": 1,
+      "remediation": "Add permissions: read-all at workflow level, override per job as needed."
+    },
+    {
+      "id": "R-004",
+      "rule": "missing_permissions_block",
+      "description": "No permissions block at workflow or job level",
+      "severity": "Medium",
+      "file": ".github/workflows/issue_wrong_template.yml",
+      "line": 1,
+      "remediation": "Add permissions: read-all at workflow level, override per job as needed."
+    },
+    {
+      "id": "R-004",
+      "rule": "missing_permissions_block",
+      "description": "No permissions block at workflow or job level",
+      "severity": "Medium",
+      "file": ".github/workflows/popular.yml",
+      "line": 1,
+      "remediation": "Add permissions: read-all at workflow level, override per job as needed."
+    },
+    {
+      "id": "R-001",
+      "rule": "pull_request_target",
+      "description": "Workflow uses pull_request_target trigger",
+      "severity": "High",
+      "file": ".github/workflows/pull_request_auto_label.yml",
+      "line": 1,
+      "remediation": "Replace with pull_request or scope permissions tightly and never checkout untrusted code."
+    },
+    {
+      "id": "R-003",
+      "rule": "mutable_action_tags",
+      "description": "Mutable action ref 'vercel/next.js/.github/actions/pr-auto-label@canary' in job 'label'",
+      "severity": "Medium",
+      "file": ".github/workflows/pull_request_auto_label.yml",
+      "line": 1,
+      "remediation": "Pin to full commit SHA: vercel/next.js/.github/actions/pr-auto-label@<sha>"
+    },
+    {
+      "id": "R-004",
+      "rule": "missing_permissions_block",
+      "description": "No permissions block at workflow or job level",
+      "severity": "Medium",
+      "file": ".github/workflows/pull_request_stats.yml",
+      "line": 1,
+      "remediation": "Add permissions: read-all at workflow level, override per job as needed."
+    },
+    {
+      "id": "R-004",
+      "rule": "missing_permissions_block",
+      "description": "No permissions block at workflow or job level",
+      "severity": "Medium",
+      "file": ".github/workflows/release-next-rspack.yml",
+      "line": 1,
+      "remediation": "Add permissions: read-all at workflow level, override per job as needed."
+    },
+    {
+      "id": "R-002",
+      "rule": "unsafe_shell_event_payload",
+      "description": "Shell step in job 'retry-on-failure' interpolates github.event payload",
+      "severity": "High",
+      "file": ".github/workflows/retry_deploy_test.yml",
+      "line": 1,
+      "remediation": "Pass event data via env vars, never interpolate directly into shell."
+    },
+    {
+      "id": "R-002",
+      "rule": "unsafe_shell_event_payload",
+      "description": "Shell step in job 'retry-on-failure' interpolates github.event payload",
+      "severity": "High",
+      "file": ".github/workflows/retry_test.yml",
+      "line": 2,
+      "remediation": "Pass event data via env vars, never interpolate directly into shell."
+    },
+    {
+      "id": "R-004",
+      "rule": "missing_permissions_block",
+      "description": "No permissions block at workflow or job level",
+      "severity": "Medium",
+      "file": ".github/workflows/rspack-nextjs-build-integration-tests.yml",
+      "line": 1,
+      "remediation": "Add permissions: read-all at workflow level, override per job as needed."
+    },
+    {
+      "id": "R-004",
+      "rule": "missing_permissions_block",
+      "description": "No permissions block at workflow or job level",
+      "severity": "Medium",
+      "file": ".github/workflows/rspack-nextjs-dev-integration-tests.yml",
+      "line": 1,
+      "remediation": "Add permissions: read-all at workflow level, override per job as needed."
+    },
+    {
+      "id": "R-004",
+      "rule": "missing_permissions_block",
+      "description": "No permissions block at workflow or job level",
+      "severity": "Medium",
+      "file": ".github/workflows/rspack-update-tests-manifest.yml",
+      "line": 1,
+      "remediation": "Add permissions: read-all at workflow level, override per job as needed."
+    },
+    {
+      "id": "R-004",
+      "rule": "missing_permissions_block",
+      "description": "No permissions block at workflow or job level",
+      "severity": "Medium",
+      "file": ".github/workflows/setup-nextjs-build.yml",
+      "line": 1,
+      "remediation": "Add permissions: read-all at workflow level, override per job as needed."
+    },
+    {
+      "id": "R-004",
+      "rule": "missing_permissions_block",
+      "description": "No permissions block at workflow or job level",
+      "severity": "Medium",
+      "file": ".github/workflows/sync_backport_canary_release.yml",
+      "line": 1,
+      "remediation": "Add permissions: read-all at workflow level, override per job as needed."
+    },
+    {
+      "id": "R-004",
+      "rule": "missing_permissions_block",
+      "description": "No permissions block at workflow or job level",
+      "severity": "Medium",
+      "file": ".github/workflows/test-turbopack-rust-bench-test.yml",
+      "line": 1,
+      "remediation": "Add permissions: read-all at workflow level, override per job as needed."
+    },
+    {
+      "id": "R-004",
+      "rule": "missing_permissions_block",
+      "description": "No permissions block at workflow or job level",
+      "severity": "Medium",
+      "file": ".github/workflows/test_e2e_deploy_release.yml",
+      "line": 1,
+      "remediation": "Add permissions: read-all at workflow level, override per job as needed."
+    },
+    {
+      "id": "R-004",
+      "rule": "missing_permissions_block",
+      "description": "No permissions block at workflow or job level",
+      "severity": "Medium",
+      "file": ".github/workflows/test_e2e_project_reset_cron.yml",
+      "line": 1,
+      "remediation": "Add permissions: read-all at workflow level, override per job as needed."
+    },
+    {
+      "id": "R-004",
+      "rule": "missing_permissions_block",
+      "description": "No permissions block at workflow or job level",
+      "severity": "Medium",
+      "file": ".github/workflows/test_examples.yml",
+      "line": 1,
+      "remediation": "Add permissions: read-all at workflow level, override per job as needed."
+    },
+    {
+      "id": "R-004",
+      "rule": "missing_permissions_block",
+      "description": "No permissions block at workflow or job level",
+      "severity": "Medium",
+      "file": ".github/workflows/trigger_release.yml",
+      "line": 1,
+      "remediation": "Add permissions: read-all at workflow level, override per job as needed."
+    },
+    {
+      "id": "R-004",
+      "rule": "missing_permissions_block",
+      "description": "No permissions block at workflow or job level",
+      "severity": "Medium",
+      "file": ".github/workflows/turbopack-nextjs-build-integration-tests.yml",
+      "line": 1,
+      "remediation": "Add permissions: read-all at workflow level, override per job as needed."
+    },
+    {
+      "id": "R-004",
+      "rule": "missing_permissions_block",
+      "description": "No permissions block at workflow or job level",
+      "severity": "Medium",
+      "file": ".github/workflows/turbopack-nextjs-dev-integration-tests.yml",
+      "line": 1,
+      "remediation": "Add permissions: read-all at workflow level, override per job as needed."
+    },
+    {
+      "id": "R-004",
+      "rule": "missing_permissions_block",
+      "description": "No permissions block at workflow or job level",
+      "severity": "Medium",
+      "file": ".github/workflows/turbopack-update-tests-manifest.yml",
+      "line": 1,
+      "remediation": "Add permissions: read-all at workflow level, override per job as needed."
+    },
+    {
+      "id": "R-004",
+      "rule": "missing_permissions_block",
+      "description": "No permissions block at workflow or job level",
+      "severity": "Medium",
+      "file": ".github/workflows/update_fonts_data.yml",
+      "line": 1,
+      "remediation": "Add permissions: read-all at workflow level, override per job as needed."
+    },
+    {
+      "id": "R-004",
+      "rule": "missing_permissions_block",
+      "description": "No permissions block at workflow or job level",
+      "severity": "Medium",
+      "file": ".github/workflows/update_react.yml",
+      "line": 1,
+      "remediation": "Add permissions: read-all at workflow level, override per job as needed."
+    },
+    {
+      "id": "R-004",
+      "rule": "missing_permissions_block",
+      "description": "No permissions block at workflow or job level",
+      "severity": "Medium",
+      "file": ".github/workflows/upload-tests-manifest.yml",
+      "line": 1,
+      "remediation": "Add permissions: read-all at workflow level, override per job as needed."
+    },
+    {
+      "id": "R-002",
+      "rule": "unsafe_shell_event_payload",
+      "description": "Shell step in job 'upload' interpolates github.event payload",
+      "severity": "High",
+      "file": ".github/workflows/upload_preview_tarballs.yml",
+      "line": 8,
+      "remediation": "Pass event data via env vars, never interpolate directly into shell."
+    }
+  ],
+  "Risky": [
+    {
+      "id": "R-004",
+      "rule": "missing_permissions_block",
+      "description": "No permissions block at workflow or job level",
+      "severity": "Medium",
+      "file": ".github/workflows/build_and_deploy.yml",
+      "line": 1,
+      "remediation": "Add permissions: read-all at workflow level, override per job as needed."
+    },
+    {
+      "id": "R-002",
+      "rule": "unsafe_shell_event_payload",
+      "description": "Shell step in job 'deploy-target' interpolates github.event payload",
+      "severity": "High",
+      "file": ".github/workflows/build_and_deploy.yml",
+      "line": 2,
+      "remediation": "Pass event data via env vars, never interpolate directly into shell."
+    },
+    {
+      "id": "R-002",
+      "rule": "unsafe_shell_event_payload",
+      "description": "Shell step in job 'deploy-tarball' interpolates github.event payload",
+      "severity": "High",
+      "file": ".github/workflows/build_and_deploy.yml",
+      "line": 7,
+      "remediation": "Pass event data via env vars, never interpolate directly into shell."
+    },
+    {
+      "id": "R-004",
+      "rule": "missing_permissions_block",
+      "description": "No permissions block at workflow or job level",
+      "severity": "Medium",
+      "file": ".github/workflows/build_and_test.yml",
+      "line": 1,
+      "remediation": "Add permissions: read-all at workflow level, override per job as needed."
+    },
+    {
+      "id": "R-004",
+      "rule": "missing_permissions_block",
+      "description": "No permissions block at workflow or job level",
+      "severity": "Medium",
+      "file": ".github/workflows/build_reusable.yml",
+      "line": 1,
+      "remediation": "Add permissions: read-all at workflow level, override per job as needed."
+    },
+    {
+      "id": "R-004",
+      "rule": "missing_permissions_block",
+      "description": "No permissions block at workflow or job level",
+      "severity": "Medium",
+      "file": ".github/workflows/code_freeze.yml",
+      "line": 1,
+      "remediation": "Add permissions: read-all at workflow level, override per job as needed."
+    },
+    {
+      "id": "R-004",
+      "rule": "missing_permissions_block",
+      "description": "No permissions block at workflow or job level",
+      "severity": "Medium",
+      "file": ".github/workflows/create_release_branch.yml",
+      "line": 1,
+      "remediation": "Add permissions: read-all at workflow level, override per job as needed."
+    },
+    {
+      "id": "R-004",
+      "rule": "missing_permissions_block",
+      "description": "No permissions block at workflow or job level",
+      "severity": "Medium",
+      "file": ".github/workflows/graphite_ci_optimizer.yml",
+      "line": 1,
+      "remediation": "Add permissions: read-all at workflow level, override per job as needed."
+    },
+    {
+      "id": "R-004",
+      "rule": "missing_permissions_block",
+      "description": "No permissions block at workflow or job level",
+      "severity": "Medium",
+      "file": ".github/workflows/integration_tests_reusable.yml",
+      "line": 1,
+      "remediation": "Add permissions: read-all at workflow level, override per job as needed."
+    },
+    {
+      "id": "R-004",
+      "rule": "missing_permissions_block",
+      "description": "No permissions block at workflow or job level",
+      "severity": "Medium",
+      "file": ".github/workflows/issue_stale.yml",
+      "line": 1,
+      "remediation": "Add permissions: read-all at workflow level, override per job as needed."
+    },
+    {
+      "id": "R-004",
+      "rule": "missing_permissions_block",
+      "description": "No permissions block at workflow or job level",
+      "severity": "Medium",
+      "file": ".github/workflows/issue_wrong_template.yml",
+      "line": 1,
+      "remediation": "Add permissions: read-all at workflow level, override per job as needed."
+    },
+    {
+      "id": "R-004",
+      "rule": "missing_permissions_block",
+      "description": "No permissions block at workflow or job level",
+      "severity": "Medium",
+      "file": ".github/workflows/popular.yml",
+      "line": 1,
+      "remediation": "Add permissions: read-all at workflow level, override per job as needed."
+    },
+    {
+      "id": "R-001",
+      "rule": "pull_request_target",
+      "description": "Workflow uses pull_request_target trigger",
+      "severity": "High",
+      "file": ".github/workflows/pull_request_auto_label.yml",
+      "line": 1,
+      "remediation": "Replace with pull_request or scope permissions tightly and never checkout untrusted code."
+    },
+    {
+      "id": "R-003",
+      "rule": "mutable_action_tags",
+      "description": "Mutable action ref 'vercel/next.js/.github/actions/pr-auto-label@canary' in job 'label'",
+      "severity": "Medium",
+      "file": ".github/workflows/pull_request_auto_label.yml",
+      "line": 1,
+      "remediation": "Pin to full commit SHA: vercel/next.js/.github/actions/pr-auto-label@<sha>"
+    },
+    {
+      "id": "R-004",
+      "rule": "missing_permissions_block",
+      "description": "No permissions block at workflow or job level",
+      "severity": "Medium",
+      "file": ".github/workflows/pull_request_stats.yml",
+      "line": 1,
+      "remediation": "Add permissions: read-all at workflow level, override per job as needed."
+    },
+    {
+      "id": "R-004",
+      "rule": "missing_permissions_block",
+      "description": "No permissions block at workflow or job level",
+      "severity": "Medium",
+      "file": ".github/workflows/release-next-rspack.yml",
+      "line": 1,
+      "remediation": "Add permissions: read-all at workflow level, override per job as needed."
+    },
+    {
+      "id": "R-002",
+      "rule": "unsafe_shell_event_payload",
+      "description": "Shell step in job 'retry-on-failure' interpolates github.event payload",
+      "severity": "High",
+      "file": ".github/workflows/retry_deploy_test.yml",
+      "line": 1,
+      "remediation": "Pass event data via env vars, never interpolate directly into shell."
+    },
+    {
+      "id": "R-002",
+      "rule": "unsafe_shell_event_payload",
+      "description": "Shell step in job 'retry-on-failure' interpolates github.event payload",
+      "severity": "High",
+      "file": ".github/workflows/retry_test.yml",
+      "line": 2,
+      "remediation": "Pass event data via env vars, never interpolate directly into shell."
+    },
+    {
+      "id": "R-004",
+      "rule": "missing_permissions_block",
+      "description": "No permissions block at workflow or job level",
+      "severity": "Medium",
+      "file": ".github/workflows/rspack-nextjs-build-integration-tests.yml",
+      "line": 1,
+      "remediation": "Add permissions: read-all at workflow level, override per job as needed."
+    },
+    {
+      "id": "R-004",
+      "rule": "missing_permissions_block",
+      "description": "No permissions block at workflow or job level",
+      "severity": "Medium",
+      "file": ".github/workflows/rspack-nextjs-dev-integration-tests.yml",
+      "line": 1,
+      "remediation": "Add permissions: read-all at workflow level, override per job as needed."
+    },
+    {
+      "id": "R-004",
+      "rule": "missing_permissions_block",
+      "description": "No permissions block at workflow or job level",
+      "severity": "Medium",
+      "file": ".github/workflows/rspack-update-tests-manifest.yml",
+      "line": 1,
+      "remediation": "Add permissions: read-all at workflow level, override per job as needed."
+    },
+    {
+      "id": "R-004",
+      "rule": "missing_permissions_block",
+      "description": "No permissions block at workflow or job level",
+      "severity": "Medium",
+      "file": ".github/workflows/setup-nextjs-build.yml",
+      "line": 1,
+      "remediation": "Add permissions: read-all at workflow level, override per job as needed."
+    },
+    {
+      "id": "R-004",
+      "rule": "missing_permissions_block",
+      "description": "No permissions block at workflow or job level",
+      "severity": "Medium",
+      "file": ".github/workflows/sync_backport_canary_release.yml",
+      "line": 1,
+      "remediation": "Add permissions: read-all at workflow level, override per job as needed."
+    },
+    {
+      "id": "R-004",
+      "rule": "missing_permissions_block",
+      "description": "No permissions block at workflow or job level",
+      "severity": "Medium",
+      "file": ".github/workflows/test-turbopack-rust-bench-test.yml",
+      "line": 1,
+      "remediation": "Add permissions: read-all at workflow level, override per job as needed."
+    },
+    {
+      "id": "R-004",
+      "rule": "missing_permissions_block",
+      "description": "No permissions block at workflow or job level",
+      "severity": "Medium",
+      "file": ".github/workflows/test_e2e_deploy_release.yml",
+      "line": 1,
+      "remediation": "Add permissions: read-all at workflow level, override per job as needed."
+    },
+    {
+      "id": "R-004",
+      "rule": "missing_permissions_block",
+      "description": "No permissions block at workflow or job level",
+      "severity": "Medium",
+      "file": ".github/workflows/test_e2e_project_reset_cron.yml",
+      "line": 1,
+      "remediation": "Add permissions: read-all at workflow level, override per job as needed."
+    },
+    {
+      "id": "R-004",
+      "rule": "missing_permissions_block",
+      "description": "No permissions block at workflow or job level",
+      "severity": "Medium",
+      "file": ".github/workflows/test_examples.yml",
+      "line": 1,
+      "remediation": "Add permissions: read-all at workflow level, override per job as needed."
+    },
+    {
+      "id": "R-004",
+      "rule": "missing_permissions_block",
+      "description": "No permissions block at workflow or job level",
+      "severity": "Medium",
+      "file": ".github/workflows/trigger_release.yml",
+      "line": 1,
+      "remediation": "Add permissions: read-all at workflow level, override per job as needed."
+    },
+    {
+      "id": "R-004",
+      "rule": "missing_permissions_block",
+      "description": "No permissions block at workflow or job level",
+      "severity": "Medium",
+      "file": ".github/workflows/turbopack-nextjs-build-integration-tests.yml",
+      "line": 1,
+      "remediation": "Add permissions: read-all at workflow level, override per job as needed."
+    },
+    {
+      "id": "R-004",
+      "rule": "missing_permissions_block",
+      "description": "No permissions block at workflow or job level",
+      "severity": "Medium",
+      "file": ".github/workflows/turbopack-nextjs-dev-integration-tests.yml",
+      "line": 1,
+      "remediation": "Add permissions: read-all at workflow level, override per job as needed."
+    },
+    {
+      "id": "R-004",
+      "rule": "missing_permissions_block",
+      "description": "No permissions block at workflow or job level",
+      "severity": "Medium",
+      "file": ".github/workflows/turbopack-update-tests-manifest.yml",
+      "line": 1,
+      "remediation": "Add permissions: read-all at workflow level, override per job as needed."
+    },
+    {
+      "id": "R-004",
+      "rule": "missing_permissions_block",
+      "description": "No permissions block at workflow or job level",
+      "severity": "Medium",
+      "file": ".github/workflows/update_fonts_data.yml",
+      "line": 1,
+      "remediation": "Add permissions: read-all at workflow level, override per job as needed."
+    },
+    {
+      "id": "R-004",
+      "rule": "missing_permissions_block",
+      "description": "No permissions block at workflow or job level",
+      "severity": "Medium",
+      "file": ".github/workflows/update_react.yml",
+      "line": 1,
+      "remediation": "Add permissions: read-all at workflow level, override per job as needed."
+    },
+    {
+      "id": "R-004",
+      "rule": "missing_permissions_block",
+      "description": "No permissions block at workflow or job level",
+      "severity": "Medium",
+      "file": ".github/workflows/upload-tests-manifest.yml",
+      "line": 1,
+      "remediation": "Add permissions: read-all at workflow level, override per job as needed."
+    },
+    {
+      "id": "R-002",
+      "rule": "unsafe_shell_event_payload",
+      "description": "Shell step in job 'upload' interpolates github.event payload",
+      "severity": "High",
+      "file": ".github/workflows/upload_preview_tarballs.yml",
+      "line": 8,
+      "remediation": "Pass event data via env vars, never interpolate directly into shell."
+    }
+  ],
+  "Changed": [
+    {
+      "sha": "26afa89",
+      "message": "Replace Lazy<FxHashMap> static lookups with phf::Map (#93096)",
+      "author": "Matt Mastracci"
+    },
+    {
+      "sha": "908717a",
+      "message": "Drop once_cell from all direct crate deps (#93095)",
+      "author": "Matt Mastracci"
+    },
+    {
+      "sha": "008e2e4",
+      "message": "v16.3.0-canary.8",
+      "author": "next-js-bot[bot]"
+    },
+    {
+      "sha": "aacf6e1",
+      "message": "Fix streaming in draft mode for cache components (#93417)",
+      "author": "Sam Selikoff"
+    },
+    {
+      "sha": "66776bd",
+      "message": "[turbo-trace-server] optimize loading even more (#93332)",
+      "author": "Luke Sandberg"
+    },
+    {
+      "sha": "65340b2",
+      "message": "feat(metadata): support non-standard directives in robots.ts via `other` (#93206)",
+      "author": "Tim Neutkens"
+    },
+    {
+      "sha": "b2491e3",
+      "message": "Revert \"Revert \"Node.js streams: Add forkpoint for prerenderToStream\"\" (#93376)",
+      "author": "Tim Neutkens"
+    },
+    {
+      "sha": "9a4e4e7",
+      "message": "trace-server: shrink_to_fit LazySortedVec after sorting (#93361)",
+      "author": "Tobias Koppers"
+    },
+    {
+      "sha": "ca7b3a1",
+      "message": "v16.3.0-canary.7",
+      "author": "next-js-bot[bot]"
+    },
+    {
+      "sha": "d72a035",
+      "message": "[ci]: remove PR creation from deploy test workflow (#93400)",
+      "author": "Zack Tanner"
+    },
+    {
+      "sha": "f476c5f",
+      "message": "Remove leftover Turbopack manifests (#93398)",
+      "author": "Tim Neutkens"
+    },
+    {
+      "sha": "2dece0e",
+      "message": "Fix deploy tests crashing under AI coding assistants (#93394)",
+      "author": "Hendrik Liebau"
+    },
+    {
+      "sha": "13e83e1",
+      "message": "[ci] Add support for private preview builds (#93375)",
+      "author": "Sebastian \"Sebbie\" Silbermann"
+    },
+    {
+      "sha": "a35edcf",
+      "message": "[test] Preserve Playwright traces on every failure (#93366)",
+      "author": "Sebastian \"Sebbie\" Silbermann"
+    },
+    {
+      "sha": "fb77688",
+      "message": "v16.3.0-canary.6",
+      "author": "next-js-bot[bot]"
+    },
+    {
+      "sha": "7c01430",
+      "message": "[test] Stop building fresh packages for every test (#93380)",
+      "author": "Sebastian \"Sebbie\" Silbermann"
+    },
+    {
+      "sha": "62f0d46",
+      "message": "Only log partytown setup error once (#93378)",
+      "author": "Sebastian \"Sebbie\" Silbermann"
+    },
+    {
+      "sha": "acb41ed",
+      "message": "docs: clarify rendering flow in Server/Client interleaving example (#93381)",
+      "author": "Joseph"
+    },
+    {
+      "sha": "92210e3",
+      "message": "Update 05-server-and-client-components.mdx (#93374)",
+      "author": "Zana Abdi"
+    },
+    {
+      "sha": "84f1e44",
+      "message": "Deprecate edge runtime (#93369)",
+      "author": "Tim Neutkens"
+    }
+  ],
+  "Recoverable": [
+    {
+      "id": "R-004",
+      "rule": "missing_permissions_block",
+      "description": "No permissions block at workflow or job level",
+      "severity": "Medium",
+      "file": ".github/workflows/build_and_deploy.yml",
+      "line": 1,
+      "remediation": "Add permissions: read-all at workflow level, override per job as needed."
+    },
+    {
+      "id": "R-004",
+      "rule": "missing_permissions_block",
+      "description": "No permissions block at workflow or job level",
+      "severity": "Medium",
+      "file": ".github/workflows/build_and_test.yml",
+      "line": 1,
+      "remediation": "Add permissions: read-all at workflow level, override per job as needed."
+    },
+    {
+      "id": "R-004",
+      "rule": "missing_permissions_block",
+      "description": "No permissions block at workflow or job level",
+      "severity": "Medium",
+      "file": ".github/workflows/build_reusable.yml",
+      "line": 1,
+      "remediation": "Add permissions: read-all at workflow level, override per job as needed."
+    },
+    {
+      "id": "R-004",
+      "rule": "missing_permissions_block",
+      "description": "No permissions block at workflow or job level",
+      "severity": "Medium",
+      "file": ".github/workflows/code_freeze.yml",
+      "line": 1,
+      "remediation": "Add permissions: read-all at workflow level, override per job as needed."
+    },
+    {
+      "id": "R-004",
+      "rule": "missing_permissions_block",
+      "description": "No permissions block at workflow or job level",
+      "severity": "Medium",
+      "file": ".github/workflows/create_release_branch.yml",
+      "line": 1,
+      "remediation": "Add permissions: read-all at workflow level, override per job as needed."
+    },
+    {
+      "id": "R-004",
+      "rule": "missing_permissions_block",
+      "description": "No permissions block at workflow or job level",
+      "severity": "Medium",
+      "file": ".github/workflows/graphite_ci_optimizer.yml",
+      "line": 1,
+      "remediation": "Add permissions: read-all at workflow level, override per job as needed."
+    },
+    {
+      "id": "R-004",
+      "rule": "missing_permissions_block",
+      "description": "No permissions block at workflow or job level",
+      "severity": "Medium",
+      "file": ".github/workflows/integration_tests_reusable.yml",
+      "line": 1,
+      "remediation": "Add permissions: read-all at workflow level, override per job as needed."
+    },
+    {
+      "id": "R-004",
+      "rule": "missing_permissions_block",
+      "description": "No permissions block at workflow or job level",
+      "severity": "Medium",
+      "file": ".github/workflows/issue_stale.yml",
+      "line": 1,
+      "remediation": "Add permissions: read-all at workflow level, override per job as needed."
+    },
+    {
+      "id": "R-004",
+      "rule": "missing_permissions_block",
+      "description": "No permissions block at workflow or job level",
+      "severity": "Medium",
+      "file": ".github/workflows/issue_wrong_template.yml",
+      "line": 1,
+      "remediation": "Add permissions: read-all at workflow level, override per job as needed."
+    },
+    {
+      "id": "R-004",
+      "rule": "missing_permissions_block",
+      "description": "No permissions block at workflow or job level",
+      "severity": "Medium",
+      "file": ".github/workflows/popular.yml",
+      "line": 1,
+      "remediation": "Add permissions: read-all at workflow level, override per job as needed."
+    },
+    {
+      "id": "R-003",
+      "rule": "mutable_action_tags",
+      "description": "Mutable action ref 'vercel/next.js/.github/actions/pr-auto-label@canary' in job 'label'",
+      "severity": "Medium",
+      "file": ".github/workflows/pull_request_auto_label.yml",
+      "line": 1,
+      "remediation": "Pin to full commit SHA: vercel/next.js/.github/actions/pr-auto-label@<sha>"
+    },
+    {
+      "id": "R-004",
+      "rule": "missing_permissions_block",
+      "description": "No permissions block at workflow or job level",
+      "severity": "Medium",
+      "file": ".github/workflows/pull_request_stats.yml",
+      "line": 1,
+      "remediation": "Add permissions: read-all at workflow level, override per job as needed."
+    },
+    {
+      "id": "R-004",
+      "rule": "missing_permissions_block",
+      "description": "No permissions block at workflow or job level",
+      "severity": "Medium",
+      "file": ".github/workflows/release-next-rspack.yml",
+      "line": 1,
+      "remediation": "Add permissions: read-all at workflow level, override per job as needed."
+    },
+    {
+      "id": "R-004",
+      "rule": "missing_permissions_block",
+      "description": "No permissions block at workflow or job level",
+      "severity": "Medium",
+      "file": ".github/workflows/rspack-nextjs-build-integration-tests.yml",
+      "line": 1,
+      "remediation": "Add permissions: read-all at workflow level, override per job as needed."
+    },
+    {
+      "id": "R-004",
+      "rule": "missing_permissions_block",
+      "description": "No permissions block at workflow or job level",
+      "severity": "Medium",
+      "file": ".github/workflows/rspack-nextjs-dev-integration-tests.yml",
+      "line": 1,
+      "remediation": "Add permissions: read-all at workflow level, override per job as needed."
+    },
+    {
+      "id": "R-004",
+      "rule": "missing_permissions_block",
+      "description": "No permissions block at workflow or job level",
+      "severity": "Medium",
+      "file": ".github/workflows/rspack-update-tests-manifest.yml",
+      "line": 1,
+      "remediation": "Add permissions: read-all at workflow level, override per job as needed."
+    },
+    {
+      "id": "R-004",
+      "rule": "missing_permissions_block",
+      "description": "No permissions block at workflow or job level",
+      "severity": "Medium",
+      "file": ".github/workflows/setup-nextjs-build.yml",
+      "line": 1,
+      "remediation": "Add permissions: read-all at workflow level, override per job as needed."
+    },
+    {
+      "id": "R-004",
+      "rule": "missing_permissions_block",
+      "description": "No permissions block at workflow or job level",
+      "severity": "Medium",
+      "file": ".github/workflows/sync_backport_canary_release.yml",
+      "line": 1,
+      "remediation": "Add permissions: read-all at workflow level, override per job as needed."
+    },
+    {
+      "id": "R-004",
+      "rule": "missing_permissions_block",
+      "description": "No permissions block at workflow or job level",
+      "severity": "Medium",
+      "file": ".github/workflows/test-turbopack-rust-bench-test.yml",
+      "line": 1,
+      "remediation": "Add permissions: read-all at workflow level, override per job as needed."
+    },
+    {
+      "id": "R-004",
+      "rule": "missing_permissions_block",
+      "description": "No permissions block at workflow or job level",
+      "severity": "Medium",
+      "file": ".github/workflows/test_e2e_deploy_release.yml",
+      "line": 1,
+      "remediation": "Add permissions: read-all at workflow level, override per job as needed."
+    },
+    {
+      "id": "R-004",
+      "rule": "missing_permissions_block",
+      "description": "No permissions block at workflow or job level",
+      "severity": "Medium",
+      "file": ".github/workflows/test_e2e_project_reset_cron.yml",
+      "line": 1,
+      "remediation": "Add permissions: read-all at workflow level, override per job as needed."
+    },
+    {
+      "id": "R-004",
+      "rule": "missing_permissions_block",
+      "description": "No permissions block at workflow or job level",
+      "severity": "Medium",
+      "file": ".github/workflows/test_examples.yml",
+      "line": 1,
+      "remediation": "Add permissions: read-all at workflow level, override per job as needed."
+    },
+    {
+      "id": "R-004",
+      "rule": "missing_permissions_block",
+      "description": "No permissions block at workflow or job level",
+      "severity": "Medium",
+      "file": ".github/workflows/trigger_release.yml",
+      "line": 1,
+      "remediation": "Add permissions: read-all at workflow level, override per job as needed."
+    },
+    {
+      "id": "R-004",
+      "rule": "missing_permissions_block",
+      "description": "No permissions block at workflow or job level",
+      "severity": "Medium",
+      "file": ".github/workflows/turbopack-nextjs-build-integration-tests.yml",
+      "line": 1,
+      "remediation": "Add permissions: read-all at workflow level, override per job as needed."
+    },
+    {
+      "id": "R-004",
+      "rule": "missing_permissions_block",
+      "description": "No permissions block at workflow or job level",
+      "severity": "Medium",
+      "file": ".github/workflows/turbopack-nextjs-dev-integration-tests.yml",
+      "line": 1,
+      "remediation": "Add permissions: read-all at workflow level, override per job as needed."
+    },
+    {
+      "id": "R-004",
+      "rule": "missing_permissions_block",
+      "description": "No permissions block at workflow or job level",
+      "severity": "Medium",
+      "file": ".github/workflows/turbopack-update-tests-manifest.yml",
+      "line": 1,
+      "remediation": "Add permissions: read-all at workflow level, override per job as needed."
+    },
+    {
+      "id": "R-004",
+      "rule": "missing_permissions_block",
+      "description": "No permissions block at workflow or job level",
+      "severity": "Medium",
+      "file": ".github/workflows/update_fonts_data.yml",
+      "line": 1,
+      "remediation": "Add permissions: read-all at workflow level, override per job as needed."
+    },
+    {
+      "id": "R-004",
+      "rule": "missing_permissions_block",
+      "description": "No permissions block at workflow or job level",
+      "severity": "Medium",
+      "file": ".github/workflows/update_react.yml",
+      "line": 1,
+      "remediation": "Add permissions: read-all at workflow level, override per job as needed."
+    },
+    {
+      "id": "R-004",
+      "rule": "missing_permissions_block",
+      "description": "No permissions block at workflow or job level",
+      "severity": "Medium",
+      "file": ".github/workflows/upload-tests-manifest.yml",
+      "line": 1,
+      "remediation": "Add permissions: read-all at workflow level, override per job as needed."
+    }
+  ],
+  "NextSteps": [
+    "Pass event data via env vars, never interpolate directly into shell.",
+    "Replace with pull_request or scope permissions tightly and never checkout untrusted code.",
+    "Add permissions: read-all at workflow level, override per job as needed.",
+    "Pin to full commit SHA: vercel/next.js/.github/actions/pr-auto-label@<sha>"
+  ],
+  "operator_message": "vercel/next.js is blocked. Shell step in job 'deploy-target' interpolates github.event payload.",
+  "trust_drift": {
+    "snapshot_date": null,
+    "new_findings": [],
+    "resolved_findings": [],
+    "drift_direction": "no_baseline"
+  },
+  "agent_policy": {
+    "verdict": "blocked",
+    "blocking_rule_ids": [
+      "R-002",
+      "R-002",
+      "R-001",
+      "R-002",
+      "R-002",
+      "R-002"
+    ],
+    "review_rule_ids": [
+      "R-004",
+      "R-004",
+      "R-004",
+      "R-004",
+      "R-004",
+      "R-004",
+      "R-004",
+      "R-004",
+      "R-004",
+      "R-004",
+      "R-003",
+      "R-004",
+      "R-004",
+      "R-004",
+      "R-004",
+      "R-004",
+      "R-004",
+      "R-004",
+      "R-004",
+      "R-004",
+      "R-004",
+      "R-004",
+      "R-004",
+      "R-004",
+      "R-004",
+      "R-004",
+      "R-004",
+      "R-004",
+      "R-004"
+    ],
+    "executor_class": "none"
+  },
+  "recoverability": {
+    "steps": [
+      "Pass event data via env vars, never interpolate directly into shell.",
+      "Replace with pull_request or scope permissions tightly and never checkout untrusted code.",
+      "Add permissions: read-all at workflow level, override per job as needed.",
+      "Pin to full commit SHA: vercel/next.js/.github/actions/pr-auto-label@<sha>"
+    ],
+    "estimated_files": 32,
+    "blocking_count": 6
+  }
+}
