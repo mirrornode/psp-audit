@@ -1,32 +1,53 @@
-# Repo-Snap Pistol Shrimp (psp)
+# Repo-Snap Pistol Shrimp (PSP)
+
+**PSP is the trust boundary for GitHub-native agents.**
 
 One scan. One report. One recovery plan.
 
-PSP is a GitHub repository audit tool for incident review, workflow-risk detection, and recovery planning. It helps teams understand what changed, what is risky, what may be recoverable, and what to do next.
+## The lead question
+
+> Can this repository be treated as safe for agent execution right now?
+
+PSP answers that question deterministically — from repo state alone, without org audit logs or external enrichment — and emits a canonical envelope that every downstream surface (CLI, dashboard, API, agent policy) derives from without adding new facts.
 
 ## What it does
-- Audits a repo with deterministic file-based output
-- Detects risky workflow patterns
-- Produces a recovery-oriented incident report
+
+- Audits a repository with deterministic, file-based output
+- Detects risky workflow patterns (injection, privilege escalation, mutable refs)
+- Emits a canonical envelope with `operator_message`, `trust_drift`, `agent_policy`, and `recoverability`
+- Produces a recovery-oriented incident report in `txt`, `md`, or `json`
 - Supports optional snapshot-based comparison against a last known clean state
 
 ## MVP scope
+
 - `psp audit owner/repo [--snapshot]`
-- `psp report audit.json --format json|txt|pdf`
+- `psp report audit.json --format json|txt|md`
+- `psp rate-limit`
 - Versioned payloads with `schema_version`
-- Docs, payloads, source stubs, and tests for rapid handoff
 
 ## Repository layout
-- `docs/` — handoff specs and product docs
-- `payloads/` — example JSON payloads
-- `src/psp/` — source stubs for CLI, risk, incident, and landing
-- `test/` — initial tests
 
-## Security direction
-PSP follows least-privilege GitHub Actions guidance and surfaces risky patterns such as `pull_request_target`, mutable action tags, missing `permissions:` blocks, and broad token write access.
+- `docs/` — architecture, permissions, product, and handoff specs
+- `payloads/` — example canonical envelopes
+- `src/psp/` — CLI, GitHub client, risk engine, report renderer
+- `test/` — unit and integration tests
+
+## Installation
+
+```bash
+python3 -m venv .venv && source .venv/bin/activate
+pip install -e .
+export GITHUB_TOKEN=your_token
+psp audit owner/repo
+```
+
+## Security posture
+
+PSP requests only the minimum permissions needed to inspect repository trust posture and workflow state. See `docs/github-app-permissions.md` for the full permission model.
 
 ## Next steps
-- Wire a real CLI entrypoint
-- Implement baseline workflow detectors
-- Render text and PDF reports from `audit.json`
-- Add GitHub App installation flow with minimum required permissions
+
+- Wire deterministic judgment spine (`safe` / `review` / `blocked`)
+- Implement `trust_drift` scoring
+- GitHub App installation flow
+- Render verdict cards for operator-facing surfaces

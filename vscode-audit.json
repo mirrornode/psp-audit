@@ -1,0 +1,510 @@
+{
+  "schema_version": 1,
+  "owner": "microsoft",
+  "repo": "vscode",
+  "refs": [
+    "14e8d6503a1",
+    "169",
+    "BV/1.114",
+    "DileepY/adding_setting_to_policy",
+    "DileepY/mcp_sandbax_issues",
+    "DileepY/mcp_sandboxing_update",
+    "DileepY/process_sandbox",
+    "DileepY/revert_notifications",
+    "DileepY/sandbox_domain",
+    "DileepY/sandbox_prereqs",
+    "DileepY/srt_path",
+    "DileepY/terminal_sandboxing_testing",
+    "DileepY/terminal_sandboxing_wsl",
+    "DileepY/test_fix",
+    "DileepY/testing_linux",
+    "DileepY/trustedDomains_enable",
+    "DileepY/use-bundled-ripgrep-for-sandbox-294982",
+    "DileepY/1.109",
+    "DileepY/298729_release",
+    "DileepY/303531",
+    "DileepY/304291",
+    "DileepY/305722",
+    "DileepY/307510",
+    "DileepY/308727",
+    "DileepY/312718",
+    "DileepY/313022",
+    "DileepY/313022_1",
+    "DonJayamanne-patch-1",
+    "TylerLeonhardt/another-branch",
+    "TylerLeonhardt/fix-arrowkeys-quickpick-a11y",
+    "TylerLeonhardt/fix-bing-task",
+    "TylerLeonhardt/fix-quickpick-focus",
+    "TylerLeonhardt/investigate-vscode-encrypt",
+    "TylerLeonhardt/issue120439",
+    "TylerLeonhardt/issue125206",
+    "TylerLeonhardt/quick-access-improvements",
+    "TylerLeonhardt/reverted-709c6058997eceeb7d547341e57783546fda2197",
+    "TylerLeonhardt/test-something",
+    "TylerLeonhardt/test-upload-nls",
+    "TylerLeonhardt/translation-stage",
+    "TylerLeonhardt/try-moving-to-asar",
+    "aamunger/IWTest",
+    "aamunger/ReplKernelAffinity",
+    "aamunger/backupOnEH",
+    "aamunger/backupSizeLimit",
+    "aamunger/cellDecorations",
+    "aamunger/collapsedWithError",
+    "aamunger/createReplDoc",
+    "aamunger/createReplDoc2",
+    "aamunger/diffNavigation2",
+    "aamunger/disposableLeaks",
+    "aamunger/disposableTimeout2",
+    "aamunger/fixBuildBreak",
+    "aamunger/flakyTestPort",
+    "aamunger/handleCancelledSave",
+    "aamunger/incrementalSerialization",
+    "aamunger/kernelAutoSelection",
+    "aamunger/kernelVariables",
+    "aamunger/notebookSmokeTests",
+    "aamunger/notebookWithinEditor",
+    "aamunger/nullCommands",
+    "aamunger/perfTest",
+    "aamunger/recursiveDepthCheck",
+    "aamunger/remoteModelResolution",
+    "aamunger/remoteStartup",
+    "aamunger/replAppend",
+    "aamunger/replExecute2",
+    "aamunger/revertNotebookCss",
+    "aamunger/saveBackupsInEH",
+    "aamunger/saveOnEHExperiemnt",
+    "aamunger/screenshot",
+    "aamunger/scrollOnResize",
+    "aamunger/sessionCache",
+    "aamunger/smoke-show2",
+    "aamunger/splitUpBuffer",
+    "aamunger/testDisposableTimeout",
+    "aamunger/testResultContext",
+    "aamunger/testRunName",
+    "aashnagarg/hydra-exp-hint-fix",
+    "aashnagarg/send-copilot-plan-to-router",
+    "add-surround-with-snippet-to-quick-fixes",
+    "addImportSpecifierEnding",
+    "advanced-xtab-model-config",
+    "aeschli/advanced-lungfish-509",
+    "aeschli/agreeable-bear-899",
+    "aeschli/alright-primate-250",
+    "aeschli/asleep-aphid-487",
+    "aeschli/chosen-tapir",
+    "aeschli/close-alligator-383",
+    "aeschli/colourful-dingo-736",
+    "aeschli/competent-catfish-930",
+    "aeschli/customInstructions",
+    "aeschli/dead-mastodon-581",
+    "aeschli/defensive-ocelot-108",
+    "aeschli/faint-primate",
+    "aeschli/few-cattle-427",
+    "aeschli/fix160094",
+    "aeschli/fundamental-donkey-939",
+    "aeschli/generateStyeSheetWithColorVariables",
+    "aeschli/gentle-crane"
+  ],
+  "tags": [
+    "vsda-v1.39.1",
+    "v14",
+    "v1.19.3",
+    "v0.45.1",
+    "v0.44.2",
+    "v0.44.1",
+    "v0.3.11",
+    "translation/20172701.01",
+    "translation/20170407.01",
+    "translation/20170331.01",
+    "translation/20170324.01",
+    "translation/20170317.01",
+    "translation/20170311.01",
+    "translation/20170227.01",
+    "translation/20170217.01",
+    "translation/20170203.01",
+    "translation/20170127.01",
+    "translation/20170123.01",
+    "translation/20161209.01",
+    "translation/20161125.01",
+    "translation/20161118.01",
+    "translation/20161111.01",
+    "translation/20161028.01",
+    "translation/20161014.01",
+    "translation/20160902.01",
+    "translation/20160826.01",
+    "translation/20160817.01",
+    "release/1.46.0",
+    "release/0.10.1-extensionbuilders",
+    "master-with-conflict-190418",
+    "1.118.1",
+    "1.118.0",
+    "1.117.0",
+    "1.116.0",
+    "1.115.0",
+    "1.114.0",
+    "1.113.0",
+    "1.112.0",
+    "1.111.0",
+    "1.110.1",
+    "1.110",
+    "1.109.5",
+    "1.109.4",
+    "1.109.2",
+    "1.109.1",
+    "1.109.0",
+    "1.108.2",
+    "1.108.1",
+    "1.108.0",
+    "1.107.1",
+    "1.107.0",
+    "1.106.3",
+    "1.106.2",
+    "1.106.1",
+    "1.106.0",
+    "1.105.1",
+    "1.105.0",
+    "1.104.3",
+    "1.104.2",
+    "1.104.1",
+    "1.104.0",
+    "1.103.2",
+    "1.103.1",
+    "1.103.0",
+    "1.102.3",
+    "1.102.2",
+    "1.102.1",
+    "1.102.0",
+    "1.101.2",
+    "1.101.1",
+    "1.101.0",
+    "1.100.3",
+    "1.100.2",
+    "1.100.1",
+    "1.100.0",
+    "1.99.3",
+    "1.99.2",
+    "1.99.1",
+    "1.99.0",
+    "1.98.2",
+    "1.98.1",
+    "1.98.0",
+    "1.97.2",
+    "1.97.1",
+    "1.97.0",
+    "1.96.4",
+    "1.96.3",
+    "1.96.2",
+    "1.96.1",
+    "1.96.0",
+    "1.95.3",
+    "1.95.2",
+    "1.95.1",
+    "1.95.0",
+    "1.94.2",
+    "1.94.1",
+    "1.94.0",
+    "1.93.1",
+    "1.93.0",
+    "1.92.2"
+  ],
+  "workflows": [
+    {
+      "name": "api-proposal-version-check.yml",
+      "path": ".github/workflows/api-proposal-version-check.yml",
+      "findings": 0
+    },
+    {
+      "name": "chat-lib-package.yml",
+      "path": ".github/workflows/chat-lib-package.yml",
+      "findings": 0
+    },
+    {
+      "name": "chat-perf.yml",
+      "path": ".github/workflows/chat-perf.yml",
+      "findings": 0
+    },
+    {
+      "name": "component-fixture-tests.yml",
+      "path": ".github/workflows/component-fixture-tests.yml",
+      "findings": 0
+    },
+    {
+      "name": "copilot-setup-steps.yml",
+      "path": ".github/workflows/copilot-setup-steps.yml",
+      "findings": 0
+    },
+    {
+      "name": "monaco-editor.yml",
+      "path": ".github/workflows/monaco-editor.yml",
+      "findings": 0
+    },
+    {
+      "name": "no-engineering-system-changes.yml",
+      "path": ".github/workflows/no-engineering-system-changes.yml",
+      "findings": 3
+    },
+    {
+      "name": "pr-darwin-test.yml",
+      "path": ".github/workflows/pr-darwin-test.yml",
+      "findings": 1
+    },
+    {
+      "name": "pr-linux-cli-test.yml",
+      "path": ".github/workflows/pr-linux-cli-test.yml",
+      "findings": 1
+    },
+    {
+      "name": "pr-linux-test.yml",
+      "path": ".github/workflows/pr-linux-test.yml",
+      "findings": 1
+    },
+    {
+      "name": "pr-node-modules.yml",
+      "path": ".github/workflows/pr-node-modules.yml",
+      "findings": 0
+    },
+    {
+      "name": "pr-win32-test.yml",
+      "path": ".github/workflows/pr-win32-test.yml",
+      "findings": 1
+    },
+    {
+      "name": "pr.yml",
+      "path": ".github/workflows/pr.yml",
+      "findings": 0
+    },
+    {
+      "name": "screenshot-test.yml",
+      "path": ".github/workflows/screenshot-test.yml",
+      "findings": 1
+    },
+    {
+      "name": "sessions-e2e.yml",
+      "path": ".github/workflows/sessions-e2e.yml",
+      "findings": 0
+    },
+    {
+      "name": "telemetry.yml",
+      "path": ".github/workflows/telemetry.yml",
+      "findings": 0
+    }
+  ],
+  "settings_snapshot": {},
+  "Risky": [
+    {
+      "id": "R-002",
+      "rule": "unsafe_shell_event_payload",
+      "description": "Shell step in job 'main' interpolates github.event payload",
+      "severity": "High",
+      "file": ".github/workflows/no-engineering-system-changes.yml",
+      "line": 3,
+      "remediation": "Pass event data via env vars, never interpolate directly into shell."
+    },
+    {
+      "id": "R-002",
+      "rule": "unsafe_shell_event_payload",
+      "description": "Shell step in job 'main' interpolates github.event payload",
+      "severity": "High",
+      "file": ".github/workflows/no-engineering-system-changes.yml",
+      "line": 4,
+      "remediation": "Pass event data via env vars, never interpolate directly into shell."
+    },
+    {
+      "id": "R-002",
+      "rule": "unsafe_shell_event_payload",
+      "description": "Shell step in job 'main' interpolates github.event payload",
+      "severity": "High",
+      "file": ".github/workflows/no-engineering-system-changes.yml",
+      "line": 8,
+      "remediation": "Pass event data via env vars, never interpolate directly into shell."
+    },
+    {
+      "id": "R-004",
+      "rule": "missing_permissions_block",
+      "description": "No permissions block at workflow or job level",
+      "severity": "Medium",
+      "file": ".github/workflows/pr-darwin-test.yml",
+      "line": 1,
+      "remediation": "Add permissions: read-all at workflow level, override per job as needed."
+    },
+    {
+      "id": "R-004",
+      "rule": "missing_permissions_block",
+      "description": "No permissions block at workflow or job level",
+      "severity": "Medium",
+      "file": ".github/workflows/pr-linux-cli-test.yml",
+      "line": 1,
+      "remediation": "Add permissions: read-all at workflow level, override per job as needed."
+    },
+    {
+      "id": "R-004",
+      "rule": "missing_permissions_block",
+      "description": "No permissions block at workflow or job level",
+      "severity": "Medium",
+      "file": ".github/workflows/pr-linux-test.yml",
+      "line": 1,
+      "remediation": "Add permissions: read-all at workflow level, override per job as needed."
+    },
+    {
+      "id": "R-004",
+      "rule": "missing_permissions_block",
+      "description": "No permissions block at workflow or job level",
+      "severity": "Medium",
+      "file": ".github/workflows/pr-win32-test.yml",
+      "line": 1,
+      "remediation": "Add permissions: read-all at workflow level, override per job as needed."
+    },
+    {
+      "id": "R-002",
+      "rule": "unsafe_shell_event_payload",
+      "description": "Shell step in job 'screenshots' interpolates github.event payload",
+      "severity": "High",
+      "file": ".github/workflows/screenshot-test.yml",
+      "line": 16,
+      "remediation": "Pass event data via env vars, never interpolate directly into shell."
+    }
+  ],
+  "Changed": [
+    {
+      "sha": "8309b22",
+      "message": "agent host: eagerly create sessions when a folder is picked (#313841)",
+      "author": "Connor Peet"
+    },
+    {
+      "sha": "96e4e9e",
+      "message": "agentHost: auto-approve reads of Copilot SDK tool-output temp files (#313837)",
+      "author": "Rob Lourens"
+    },
+    {
+      "sha": "5abf846",
+      "message": "Model picker changes  (#313825)",
+      "author": "Paul"
+    },
+    {
+      "sha": "b2e6267",
+      "message": "chat: allow text selection in tool confirmation message (#313829)",
+      "author": "Rob Lourens"
+    },
+    {
+      "sha": "4a644b4",
+      "message": "Disable flaky test (#313832)",
+      "author": "Paul"
+    },
+    {
+      "sha": "4ca77f1",
+      "message": "sessions: hide \"Enter to Apply\" tooltip in workspace picker (#313826)",
+      "author": "Rob Lourens"
+    },
+    {
+      "sha": "4bc1682",
+      "message": "sessions: remember tunnel disconnects (#313800)",
+      "author": "Rob Lourens"
+    },
+    {
+      "sha": "317392e",
+      "message": "agent-host: restore sessions without listing catalog (#313821)",
+      "author": "Rob Lourens"
+    },
+    {
+      "sha": "f6c05d7",
+      "message": "agentHost: forward parent --user-data-dir to spawned host (#313827)",
+      "author": "Rob Lourens"
+    },
+    {
+      "sha": "9b92388",
+      "message": "UseChatSessionCustomizationsForCustomAgents setting (#313781)",
+      "author": "Martin Aeschlimann"
+    },
+    {
+      "sha": "675ef9f",
+      "message": "[cli] reduce info logs (#313822)",
+      "author": "Peng Lyu"
+    },
+    {
+      "sha": "e6b9ae7",
+      "message": "AHP/Customizations: BrowserPluginGitCommandService for adding plugins in web (#313575)",
+      "author": "Josh Spicer"
+    },
+    {
+      "sha": "8d9a4bb",
+      "message": "Add support for UBB in manage models view (#313741)",
+      "author": "Paul"
+    },
+    {
+      "sha": "682c790",
+      "message": "Don't dismiss hover when mouse exits due to programmatic resize (#313584)",
+      "author": "Paul"
+    },
+    {
+      "sha": "7f53a83",
+      "message": "Merge pull request #307763 from AshtonYoon/fix/markdown-preview-scroll-sync-regressions",
+      "author": "Matt Bierner"
+    },
+    {
+      "sha": "ff66ce6",
+      "message": "Merge branch 'main' into fix/markdown-preview-scroll-sync-regressions",
+      "author": "Matt Bierner"
+    },
+    {
+      "sha": "1d94ae1",
+      "message": "gate claude model behind setting too (#313801)",
+      "author": "Justin Chen"
+    },
+    {
+      "sha": "d3e91ab",
+      "message": "Move agent host picker to sessions sidebar (web desktop) (#313619)",
+      "author": "Osvaldo Ortega"
+    },
+    {
+      "sha": "7211c0f",
+      "message": "agentHost/claude: Phase 3 reference grounding + Phase 4 ClaudeAgent skeleton (#313780)",
+      "author": "Tyler James Leonhardt"
+    },
+    {
+      "sha": "7bf921d",
+      "message": "Yemohyle/add to ext telemetrey (#313159)",
+      "author": "yemohyleyemohyle"
+    }
+  ],
+  "Recoverable": [
+    {
+      "id": "R-004",
+      "rule": "missing_permissions_block",
+      "description": "No permissions block at workflow or job level",
+      "severity": "Medium",
+      "file": ".github/workflows/pr-darwin-test.yml",
+      "line": 1,
+      "remediation": "Add permissions: read-all at workflow level, override per job as needed."
+    },
+    {
+      "id": "R-004",
+      "rule": "missing_permissions_block",
+      "description": "No permissions block at workflow or job level",
+      "severity": "Medium",
+      "file": ".github/workflows/pr-linux-cli-test.yml",
+      "line": 1,
+      "remediation": "Add permissions: read-all at workflow level, override per job as needed."
+    },
+    {
+      "id": "R-004",
+      "rule": "missing_permissions_block",
+      "description": "No permissions block at workflow or job level",
+      "severity": "Medium",
+      "file": ".github/workflows/pr-linux-test.yml",
+      "line": 1,
+      "remediation": "Add permissions: read-all at workflow level, override per job as needed."
+    },
+    {
+      "id": "R-004",
+      "rule": "missing_permissions_block",
+      "description": "No permissions block at workflow or job level",
+      "severity": "Medium",
+      "file": ".github/workflows/pr-win32-test.yml",
+      "line": 1,
+      "remediation": "Add permissions: read-all at workflow level, override per job as needed."
+    }
+  ],
+  "NextSteps": [
+    "Add permissions: read-all to all workflows.",
+    "Move github.event.* references into env vars before shell use."
+  ]
+}
