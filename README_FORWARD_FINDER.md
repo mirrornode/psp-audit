@@ -1,0 +1,1 @@
+Forward-Finder v0.1 lives in `src/psp/forward_finder.py` with its operating boundary in `docs/FORWARD_FINDER_V0_1.md`, retrospective PR #63 calibration evidence in `docs/FORWARD_FINDER_PR63_RESULT.md`, and a prospective self-trial in `examples/forward_finder_self_trial.json`.
