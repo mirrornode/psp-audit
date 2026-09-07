@@ -1,0 +1,6 @@
+Reconcile current machine-readable workstreams after a correction cycle and pending review.
+Permit UNKNOWN state/outcome handling. Separate source branch from execution worktree branch.
+Keep post-merge ACTIVE rollout work with a next action. Bind node review receipt to seat.
+Preserve BUILD/REVIEW/AUTHORIZE/EXECUTE separation including Executor.
+Rewrite historical TODO continuity without deleting predecessor evidence.
+Record merged pull request subjects with exact head or commit identity.
