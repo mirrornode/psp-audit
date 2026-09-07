@@ -77,7 +77,7 @@ _RULES = (
     ),
     (
         "FF-HISTORICAL-EVIDENCE",
-        (("historical", "continuity", "predecessor"), ("delete", "rewrite", "remove"), ("todo", "requirement", "evidence")),
+        (("historical", "continuity", "predecessor"), ("delet", "rewrite", "remove"), ("todo", "requirement", "evidence")),
         "P2",
         "A cleanup may delete concrete predecessor requirements while claiming they remain retained as historical evidence.",
         "Move removed operational detail into a dated continuity artifact or preserve it under a historical heading before simplifying the current file.",
