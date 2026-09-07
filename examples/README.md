@@ -1,0 +1,1 @@
+Forward-Finder examples include the retrospective CORE-HUB PR #63 calibration baseline and the prospective self-review trial. Retrospective fixtures must not be counted as prospective prediction evidence.
