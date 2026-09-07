@@ -1,0 +1,8 @@
+{
+  "trial": "forward-finder-v0.1-self-review",
+  "pre_review_prediction": {
+    "predicted_material_findings": [],
+    "verdict": "UNKNOWN"
+  },
+  "scoring_rule": "Any material finding on the fresh exact-head review is a prospective miss unless it was predicted before review submission."
+}
