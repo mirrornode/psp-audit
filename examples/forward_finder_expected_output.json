@@ -1,0 +1,14 @@
+{
+  "expected_outcome": "Fresh exact-head review with no unresolved material findings.",
+  "verdict": "GO_WITH_CORRECTION",
+  "predicted_codes": [
+    "FF-UNKNOWN-CONSISTENCY",
+    "FF-BRANCH-IDENTITY",
+    "FF-ACTIVE-NEXT-EVIDENCE",
+    "FF-ROUTING-FRESHNESS",
+    "FF-SEAT-BINDING",
+    "FF-EXECUTOR-SEPARATION",
+    "FF-HISTORICAL-EVIDENCE",
+    "FF-IMMUTABLE-SUBJECT"
+  ]
+}
