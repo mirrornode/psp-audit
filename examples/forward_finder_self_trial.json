@@ -1,0 +1,10 @@
+{
+  "trial": "forward-finder-v0.1-self-review",
+  "timing": "PROSPECTIVE_BEFORE_EXACT_HEAD_REVIEW",
+  "proposed_delta": "Add a deterministic pre-review consequence predictor, retrospective PR #63 calibration corpus, compound-signal rules, and calibration metrics without mutation, approval, merge, deployment, or provider authority.",
+  "expected_outcome": "The change remains bounded to prediction and calibration and receives fresh exact-head review.",
+  "predicted_material_findings": [],
+  "forward_finder_verdict": "UNKNOWN",
+  "reason": "No configured compound consequence family is supported strongly enough to predict a material finding. UNKNOWN is not clearance.",
+  "post_review_action": "Record any material exact-head finding as a prospective miss and add a reusable rule only if it generalizes beyond this PR."
+}
