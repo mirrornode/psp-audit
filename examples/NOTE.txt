@@ -1,0 +1,1 @@
+Retrospective calibration fixtures are training/regression evidence only; prospective trials are scored separately.
