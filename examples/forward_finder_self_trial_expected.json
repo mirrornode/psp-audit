@@ -4,5 +4,6 @@
     "predicted_material_findings": [],
     "verdict": "UNKNOWN"
   },
-  "scoring_rule": "Any material finding on the fresh exact-head review is a prospective miss unless it was predicted before review submission."
+  "scoring_rule": "Excluded from prospective metrics while provenance is UNVERIFIED.",
+  "eligible_for_prospective_metrics": false
 }

@@ -1,58 +1,60 @@
-# Forward-Finder v0.1
+# Forward-Finder v0.1 — bounded correction
 
-## Purpose
+Forward-Finder reports possible consequences of explicit, caller-supplied risk
+observations. It does not approve, merge, deploy, mutate provider state, verify
+observations, or replace exact-head review and Operator authorization.
 
-Forward-Finder predicts likely material review findings before implementation or fresh exact-head review.
+## Inputs and abstention
 
-Sequence:
+`predict` retains proposed delta, expected outcome, touched artifacts and
+invariants as context. Prose alone returns `UNKNOWN`: the old substring matcher
+could not distinguish defects from corrections or independent from overlapping
+signals. Its text inference is withdrawn, not advertised as repaired NLP.
 
-`AUDIT -> FORWARD-FINDER -> PISTOL SHRIMP -> IMPLEMENT -> EXACT-HEAD REVIEW`
+An optional `RiskObservation` binds a consequence `code` to a nonblank `subject`
+and `evidence_ref`, with separate `risk_present` and `mitigation_present`
+assessments. The risk means the condition described by that family's finding;
+the mitigation means its stated correction is already implemented. Each value
+must be a boolean or `None` (unknown). The caller must assess the actual subject,
+not infer an implemented mitigation from a desired outcome or an invariant.
+References are traceability inputs; the predictor does not fetch or authenticate
+them. This is an explicit assessment interface, not independent detection.
 
-Forward-Finder predicts. Pistol Shrimp attacks. Neither approves, merges, deploys, mutates provider state, or replaces exact-head evidence.
+Only risk `True` with mitigation `False` yields a conditional prediction.
+Unknown, mitigated, or conflicting records for the same code and subject
+abstain. Different subjects cannot supply each other's evidence. Unsupported
+families and malformed observations are rejected. No assessment establishes
+clearance, including an assessment of mitigation present.
 
-## Inputs
-
-- bounded proposed delta
-- expected outcome
-- touched artifacts
-- invariants that must remain true
+Single strings for artifacts or invariants are accepted as one item; lists and
+tuples of strings are also accepted. Context never creates a prediction.
 
 ## Output
 
-- likely P1/P2/P3 review findings
-- second-order consequences
-- preemptive correction for each prediction
-- verdict: `GO_WITH_CORRECTION` or `UNKNOWN` in v0.1
+`to_dict()` emits `expected_outcome`, a `predictions` array of full objects, and
+`verdict`. Verdict is `PREDICTIONS_PRESENT` when at least one supported conditional
+prediction exists, otherwise `UNKNOWN`. Both states are non-authorizing.
+`PREDICTIONS_PRESENT` does not imply complete coverage of the subject.
 
-`UNKNOWN` is intentional when the deterministic rule set has no supported prediction. Absence of a prediction is never treated as clearance.
+The eight consequence families and their corrections remain retrospective
+review guidance: UNKNOWN consistency, branch identity, ACTIVE next evidence,
+routing freshness, seat binding, Executor separation, historical evidence,
+and immutable subject identity.
 
-## v0.1 consequence families
+## Evaluation
 
-1. exhaustive state/outcome consistency, including `UNKNOWN`
-2. source-branch vs execution-worktree identity
-3. ACTIVE work must retain a fresh evidence-producing next action
-4. machine-readable routing freshness after a correction cycle
-5. receipt identity must bind the operating seat
-6. explicit Executor separation where execution is normative
-7. preservation of predecessor/historical evidence during cleanup
-8. immutable commit identity for merged subjects
+The old PR #63 8/8 result is historical, seeded regression evidence only. The
+corrected implementation abstains on its correction-language input. Paired
+risk/mitigation tests exercise the structured interface; they establish neither
+natural-language detection accuracy nor prospective predictive performance.
 
-## Calibration loop
+`score_prediction` counts unique consequence codes, true positives, false
+positives and misses. Precision is `None`/JSON `null` without predictions; recall
+is `None`/JSON `null` without actual findings. Exclude undefined metrics from
+macro averages; do not impute perfect performance. Codes are scored per trial;
+multiple subjects of one family do not create multiple code-level successes.
+The scorer computes arithmetic only: trial provenance eligibility must be
+established before including a trial in performance reporting.
 
-For each change:
-
-1. record Forward-Finder predictions before implementation;
-2. run Pistol Shrimp/adversarial review;
-3. implement the surviving bounded delta;
-4. obtain fresh exact-head review;
-5. map actual material findings to consequence families;
-6. score prediction precision and recall;
-7. add or refine a rule only when a real miss exposes a reusable invariant.
-
-The metric is not number of warnings. The metric is material exact-head findings anticipated before implementation.
-
-## First calibration subject: CORE-HUB PR #63
-
-The eight unresolved P2 findings on exact head `df645e26da389c4d035f4bc5f8d69d1de5824890` are used as the initial regression corpus. The v0.1 rule families intentionally correspond to those reusable consequence classes, not to specific file names or PR numbers.
-
-This is a calibration baseline, not a claim that the engine would have predicted the historical review before those findings were known. Future evaluations must be prospective to measure real predictive value.
+Known review findings may seed regression tests, never a new prospective score
+on the same review. See the trial protocol for future trials.

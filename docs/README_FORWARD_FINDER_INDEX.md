@@ -1,8 +1,10 @@
-# Forward-Finder v0.1 index
+# Forward-Finder index
 
-- `src/psp/forward_finder.py` — deterministic consequence predictor and calibration scoring
-- `tests/test_forward_finder.py` — seeded PR #63 regression and UNKNOWN fail-safe behavior
-- `docs/FORWARD_FINDER_V0_1.md` — authority boundary and operating sequence
-- `docs/FORWARD_FINDER_PR63_RESULT.md` — retrospective PR #63 baseline
-- `docs/FORWARD_FINDER_TRIAL_PROTOCOL.md` — prospective scoring protocol
-- `examples/forward_finder_self_trial.json` — pre-review self-trial record
+- `src/psp/forward_finder.py` — explicit observation evaluation and scoring
+- `tests/test_forward_finder.py` — risk/mitigation pairs, abstention, metrics and serialization
+- `tests/test_canon_gate.py` — evidence failure and checkout identity regressions
+- `docs/FORWARD_FINDER_V0_1.md` — narrowed interface and authority boundary
+- `docs/FORWARD_FINDER_PR63_RESULT.md` — historical retrospective baseline
+- `docs/FORWARD_FINDER_TRIAL_PROTOCOL.md` — prospective eligibility requirements
+- `examples/forward_finder_self_trial.json` — unverified historical record, excluded
+- `docs/FORWARD_FINDER_CORRECTION.md` — findings and correction scope

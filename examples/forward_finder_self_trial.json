@@ -6,5 +6,8 @@
   "predicted_material_findings": [],
   "forward_finder_verdict": "UNKNOWN",
   "reason": "No configured compound consequence family is supported strongly enough to predict a material finding. UNKNOWN is not clearance.",
-  "post_review_action": "Record any material exact-head finding as a prospective miss and add a reusable rule only if it generalizes beyond this PR."
+  "post_review_action": "Use known findings for retrospective regression only. A new prospective trial requires a frozen record and verified ordering before its exact-head review.",
+  "provenance_status": "UNVERIFIED",
+  "eligible_for_prospective_metrics": false,
+  "disposition": "Original timing assertion retained as history only. Exact predicted subject and pre-review ordering are not verified. Exclude from prospective metrics; do not backdate evidence."
 }
