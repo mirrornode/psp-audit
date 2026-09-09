@@ -1,0 +1,13 @@
+{
+  "trial": "forward-finder-v0.1-self-review",
+  "timing": "PROSPECTIVE_BEFORE_EXACT_HEAD_REVIEW",
+  "proposed_delta": "Add a deterministic pre-review consequence predictor, retrospective PR #63 calibration corpus, compound-signal rules, and calibration metrics without mutation, approval, merge, deployment, or provider authority.",
+  "expected_outcome": "The change remains bounded to prediction and calibration and receives fresh exact-head review.",
+  "predicted_material_findings": [],
+  "forward_finder_verdict": "UNKNOWN",
+  "reason": "No configured compound consequence family is supported strongly enough to predict a material finding. UNKNOWN is not clearance.",
+  "post_review_action": "Use known findings for retrospective regression only. A new prospective trial requires a frozen record and verified ordering before its exact-head review.",
+  "provenance_status": "UNVERIFIED",
+  "eligible_for_prospective_metrics": false,
+  "disposition": "Original timing assertion retained as history only. Exact predicted subject and pre-review ordering are not verified. Exclude from prospective metrics; do not backdate evidence."
+}

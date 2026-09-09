@@ -1,0 +1,1 @@
+Forward-Finder predicts only. It does not approve, merge, deploy, mutate provider state, or replace exact-head review.

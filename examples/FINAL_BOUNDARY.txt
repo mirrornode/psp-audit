@@ -1,0 +1,1 @@
+Prediction-only boundary. Exact-head review remains authoritative.

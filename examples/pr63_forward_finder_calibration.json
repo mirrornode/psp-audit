@@ -1,0 +1,19 @@
+{
+  "subject": {
+    "repository": "mirrornode/MIRRORNODE-CORE-HUB",
+    "pull_request": 63,
+    "exact_head": "df645e26da389c4d035f4bc5f8d69d1de5824890"
+  },
+  "actual_material_findings": [
+    "FF-UNKNOWN-CONSISTENCY",
+    "FF-BRANCH-IDENTITY",
+    "FF-ACTIVE-NEXT-EVIDENCE",
+    "FF-ROUTING-FRESHNESS",
+    "FF-SEAT-BINDING",
+    "FF-EXECUTOR-SEPARATION",
+    "FF-HISTORICAL-EVIDENCE",
+    "FF-IMMUTABLE-SUBJECT"
+  ],
+  "calibration_status": "RETROSPECTIVE_BASELINE",
+  "note": "Used to seed reusable consequence classes. This is not prospective evidence of predictive accuracy."
+}

@@ -4,7 +4,8 @@ Canon Gate - Pre-Audit Contract Enforcement
 MIRRORNODE-CORE-HUB
 Runs on every PR targeting main. Reads SYSTEM_CONTRACT.md, REPO_MAP.md, and AGENTS_TODO.md as ground truth,
 then checks the incoming diff for contract violations before any merge is allowed.
-Exit 0 = clean, merge allowed. Exit 1 = violation found, merge blocked.
+Exit 0 = scoped checks passed. Exit 1 = violation or unavailable evidence.
+Neither result authorizes merge or substitutes for exact-head review.
 Expand PHANTOM_ROUTES and AUTHORITY_CONFLICTS as contracts evolve.
 """
 import os
@@ -41,9 +42,8 @@ def get_diff() -> str:
             check=True
         )
         return result.stdout
-    except subprocess.CalledProcessError as e:
-        print(f"[Canon Gate] WARNING: Could not get diff: {e}")
-        return ""
+    except (subprocess.CalledProcessError, OSError) as e:
+        raise RuntimeError(f"Could not inspect requested diff: {e}") from e
 
 def load_contract() -> str:
     try:
@@ -110,10 +110,22 @@ def main():
     print("[Canon Gate] Loading contract...")
     load_contract()
     print("[Canon Gate] Fetching PR diff...")
-    diff = get_diff()
-    if not diff:
-        print("[Canon Gate] No diff detected. Passing.")
-        sys.exit(0)
+    try:
+        requested_head = os.environ.get("HEAD_SHA", "HEAD")
+        actual_head = subprocess.run(
+            ["git", "rev-parse", "HEAD"], capture_output=True, text=True, check=True
+        ).stdout.strip()
+        resolved_head = subprocess.run(
+            ["git", "rev-parse", "--verify", requested_head + "^{commit}"],
+            capture_output=True, text=True, check=True
+        ).stdout.strip()
+        if actual_head != resolved_head:
+            raise RuntimeError("Checkout HEAD does not equal requested HEAD_SHA")
+        print(f"[Canon Gate] Inspected head: {actual_head}")
+        diff = get_diff()
+    except (RuntimeError, subprocess.CalledProcessError, OSError) as exc:
+        print(f"[Canon Gate] EVIDENCE_UNAVAILABLE: {exc}")
+        sys.exit(1)
     print("[Canon Gate] Running checks...\n")
     violations = (
         check_governance_files_present()
@@ -131,8 +143,8 @@ def main():
         )
         print("[Canon Gate] " + "=" * 50)
         sys.exit(1)
-    print("[Canon Gate] RESULT: All checks passed. Contract coherent.")
-    print("[Canon Gate] Merge authorized.")
+    print("[Canon Gate] RESULT: Scoped contract checks passed.")
+    print("[Canon Gate] Review clearance and Operator authorization are separate requirements.")
     print("[Canon Gate] " + "=" * 50)
     sys.exit(0)
 

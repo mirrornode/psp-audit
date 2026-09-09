@@ -1,0 +1,1 @@
+Forward-Finder examples preserve the historical retrospective PR #63 corpus and unverified self-trial. Neither establishes prospective accuracy. `forward_finder_expected_output.json` is the current public serializer result for `pr63_forward_finder_trial_input.txt`, which now abstains. The original 8/8 seeded result is documented as history, not current performance.

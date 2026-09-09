@@ -1,0 +1,9 @@
+{
+  "trial": "forward-finder-v0.1-self-review",
+  "pre_review_prediction": {
+    "predicted_material_findings": [],
+    "verdict": "UNKNOWN"
+  },
+  "scoring_rule": "Excluded from prospective metrics while provenance is UNVERIFIED.",
+  "eligible_for_prospective_metrics": false
+}
